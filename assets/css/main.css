@@ -585,6 +585,24 @@ h4 {
   font-size: 15px;
 }
 
+.visitor-map {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  min-width: 250px;
+  min-height: 125px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.visitor-map iframe,
+.visitor-map img,
+.visitor-map object {
+  display: block;
+  max-width: 100%;
+}
+
 .site-footer a {
   color: var(--accent);
   font-weight: 800;
