@@ -525,6 +525,11 @@ h4 {
   object-fit: contain;
 }
 
+.company-logo-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .experience-item p {
   margin-bottom: 0;
   color: var(--muted);
