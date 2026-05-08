@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Chenchen Zhang - Senior Researcher at Tencent Hunyuan working on foundation models, reinforcement learning, agentic RL, code/reasoning models, agentic web coding, and multimodal evaluation."
+    />
+    <title>Chenchen Zhang</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Chenchen Zhang home">CZ</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#background">Background</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+        <span class="theme-icon" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <img class="avatar hero-avatar" src="assets/img/avatar.jpg" alt="Chenchen Zhang profile photo" />
+        <div class="hero-copy">
+          <h1>Chenchen Zhang</h1>
+          <p class="hero-title">Senior Researcher, Tencent · Hunyuan Department</p>
+          <p class="hero-summary">
+            I am a core contributor to the Tencent Hunyuan model family. My
+            research interests lie in foundation models and post-training, with
+            a focus on reinforcement learning, agentic RL, code/reasoning
+            models, math and STEM optimization, agentic web coding, multimodal
+            systems, and data-centric model iteration.
+          </p>
+          <p class="identity-meta">
+            Core contributor to Hy3.0 preview, HY2.0, Hunyuan-TurboS, Hunyuan-T1, and Hunyuan-Large
+          </p>
+          <div class="profile-actions" aria-label="Profile links">
+            <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=WmzUNaQAAAAJ" target="_blank" rel="noopener noreferrer">
+              <img class="profile-icon" src="assets/img/google-scholar.svg" alt="" aria-hidden="true" />
+              Google Scholar
+            </a>
+            <a href="https://github.com/xxzcc" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile, also usable for contact" title="GitHub profile, also usable for contact">
+              <img class="profile-icon" src="assets/img/github.svg" alt="" aria-hidden="true" />
+              GitHub
+            </a>
+            <a href="https://huggingface.co/xxzcc" target="_blank" rel="noopener noreferrer">
+              <img class="profile-icon" src="assets/img/huggingface.svg" alt="" aria-hidden="true" />
+              Hugging Face
+            </a>
+            <a href="mailto:zcc1959339538@gmail.com">
+              <img class="profile-icon" src="assets/img/email.svg" alt="" aria-hidden="true" />
+              Email
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell compact" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Research Directions</h2>
+          <p>
+            I am currently working on foundation models, especially code/reasoning
+            models, reinforcement learning, agentic RL, math and STEM reasoning,
+            multimodal systems, and agentic web coding.
+          </p>
+        </div>
+
+        <div class="direction-list">
+          <article class="research-direction">
+            <h3>Pretraining &amp; Foundation Models</h3>
+            <p>Hy3.0 preview, HY2.0, Hunyuan-TurboS, Hunyuan-T1, Hunyuan-Large, MAP-Neo, OpenCoder, D-CPT Law, E2-LLM, DDK.</p>
+            <div class="representative-links" aria-label="Representative pretraining and foundation model work">
+              <a href="#model-hy3-preview">Hy3.0 preview</a>
+              <a href="#model-hy2">HY2.0</a>
+              <a href="#model-hunyuan-turbos">TurboS</a>
+              <a href="#model-hunyuan-t1">T1</a>
+              <a href="#model-hunyuan-large">Hunyuan-Large</a>
+              <a href="#paper-map-neo">MAP-Neo</a>
+              <a href="#paper-open-coder">OpenCoder</a>
+              <a href="#paper-d-cpt-law">D-CPT Law</a>
+              <a href="#paper-ddk">DDK</a>
+            </div>
+          </article>
+          <article class="research-direction">
+            <h3>Reasoning &amp; Agentic RL</h3>
+            <p>Math/STEM reasoning optimization, RL for code and reasoning models, reinforcement learning on pre-training data, critic-guided RL, agentic web coding, parallel thinking, and credit assignment.</p>
+            <div class="representative-links" aria-label="Representative reasoning and agentic RL work">
+              <a href="#model-hunyuan-t1">Hunyuan-T1</a>
+              <a href="#paper-rl-pretraining-data">RLPT</a>
+              <a href="#paper-critic-lean">CriticLean</a>
+              <a href="#paper-conceptmath">ConceptMath</a>
+              <a href="#paper-mtu-bench">MTU-Bench</a>
+              <a href="#paper-credit-assignment">Credit Assignment</a>
+              <a href="#paper-relook">ReLook</a>
+              <a href="#paper-rhombus">Rhombus</a>
+            </div>
+          </article>
+          <article class="research-direction">
+            <h3>Code &amp; Agentic LLMs</h3>
+            <p>Agentic coding evaluation, long-horizon repository generation, automatic benchmark generation, visual-to-code, code critique, artifact evaluation, and code LLM pretraining.</p>
+            <div class="representative-links" aria-label="Representative code and agentic LLM work">
+              <a href="#paper-swe-compass">SWE-Compass</a>
+              <a href="#paper-nl2repo-bench">NL2Repo-Bench</a>
+              <a href="#paper-diagrams-to-code">Diagrams to Code</a>
+              <a href="#paper-autocodebench">AutoCodeBench</a>
+              <a href="#paper-relook">ReLook</a>
+              <a href="#paper-open-coder">OpenCoder</a>
+              <a href="#paper-artifactsbench">ArtifactsBench</a>
+              <a href="#paper-codecriticbench">CodeCriticBench</a>
+            </div>
+          </article>
+          <article class="research-direction">
+            <h3>Evaluation, Multimodal &amp; Surveys</h3>
+            <p>Math, code, tool-use, audio-visual, multimodal browsing, group identity evaluation, and survey resources.</p>
+            <div class="representative-links" aria-label="Representative evaluation and multimodal work">
+              <a href="#paper-omnivideobench">OmniVideoBench</a>
+              <a href="#paper-mtu-bench">MTU-Bench</a>
+              <a href="#paper-conceptmath">ConceptMath</a>
+              <a href="#paper-giebench">GIEBench</a>
+              <a href="#paper-artifactsbench">ArtifactsBench</a>
+              <a href="#paper-long-context-survey">Long-context Survey</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell two-column" id="news">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">Updates</p>
+          <h2>News</h2>
+          <p>
+            Selected paper releases, conference updates, and open-source project milestones.
+          </p>
+        </div>
+
+        <ol class="news-list">
+          <li>
+            <time datetime="2026-05">05/2026</time>
+            <p>Three papers are accepted to ICML 2026: <a href="#paper-swe-compass"><strong>SWE-Compass</strong></a>, <a href="#paper-nl2repo-bench"><strong>NL2Repo-Bench</strong></a>, and <a href="#paper-diagrams-to-code"><strong>From Diagrams to Code</strong></a>.</p>
+          </li>
+          <li>
+            <time datetime="2026-04">04/2026</time>
+            <p>Four papers are accepted to ACL 2026: <a href="#paper-critic-lean"><strong>CriticLean</strong></a>, <a href="#paper-rl-pretraining-data"><strong>RLPT</strong></a>, <a href="#paper-relook"><strong>ReLook</strong></a>, and <a href="#paper-rhombus"><strong>Rhombus</strong></a>.</p>
+          </li>
+          <li>
+            <time datetime="2026-04">04/2026</time>
+            <p><a href="#model-hy3-preview"><strong>Hy3.0 preview</strong></a> was open-sourced and reached #1 on OpenRouter's daily global API usage leaderboard.</p>
+          </li>
+          <li>
+            <time datetime="2026-01">01/2026</time>
+            <p>Two papers are accepted to ICLR 2026: <a href="#paper-autocodebench"><strong>AutoCodeBench</strong></a> and <a href="#paper-omnivideobench"><strong>OmniVideoBench</strong></a>.</p>
+          </li>
+          <li>
+            <time datetime="2025-12">12/2025</time>
+            <p>Core contributor to the <a href="#model-hy2"><strong>HY2.0</strong></a> model family, including Think and Instruct variants for reasoning and instruction-following.</p>
+          </li>
+          <li>
+            <time datetime="2025-05">05/2025</time>
+            <p>Core contributor to <a href="#model-hunyuan-turbos"><strong>Hunyuan-TurboS</strong></a>; the technical report was released.</p>
+          </li>
+          <li>
+            <time datetime="2025-05">05/2025</time>
+            <p><a href="#paper-open-coder"><strong>OpenCoder</strong></a> was accepted to ACL 2025.</p>
+          </li>
+          <li>
+            <time datetime="2025-03">03/2025</time>
+            <p>Core contributor to <a href="#model-hunyuan-t1"><strong>Hunyuan-T1</strong></a>, a reasoning-focused Hunyuan model.</p>
+          </li>
+          <li>
+            <time datetime="2025-01">01/2025</time>
+            <p><a href="#paper-mtu-bench"><strong>MTU-Bench</strong></a> was accepted to ICLR 2025.</p>
+          </li>
+          <li>
+            <time datetime="2024-11">11/2024</time>
+            <p>Core contributor to <a href="#model-hunyuan-large"><strong>Hunyuan-Large</strong></a>; model weights and technical report were released.</p>
+          </li>
+          <li>
+            <time datetime="2024-09">09/2024</time>
+            <p>Two papers are accepted to NeurIPS 2024: <a href="#paper-ddk"><strong>DDK</strong></a> and <a href="#paper-d-cpt-law"><strong>D-CPT Law</strong></a>.</p>
+          </li>
+          <li>
+            <time datetime="2024-05">05/2024</time>
+            <p>Two papers are accepted to ACL 2024: <a href="#paper-e2-llm"><strong>E2-LLM</strong></a> and <a href="#paper-conceptmath"><strong>ConceptMath</strong></a>.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section-shell compact" id="publications">
+        <div class="section-heading publications-heading">
+          <p class="eyebrow">Selected Work</p>
+          <div class="section-title-row">
+            <h2>Publications &amp; Projects</h2>
+            <a class="full-list-link" href="https://scholar.google.com/citations?hl=zh-CN&amp;user=WmzUNaQAAAAJ" target="_blank" rel="noopener noreferrer">
+              <span class="desktop-label">Full list on Google Scholar</span>
+              <span class="mobile-label">Full list</span>
+            </a>
+          </div>
+          <p>
+            A curated list of representative work.
+          </p>
+        </div>
+
+        <div class="publication-groups">
+          <section class="publication-group" aria-labelledby="models-heading">
+            <h3 id="models-heading">Models &amp; Technical Reports</h3>
+            <div class="publication-list">
+              <article class="publication-item highlight" id="model-hy3-preview">
+                <div class="publication-header">
+                  <h4>Hy3.0 preview</h4>
+                  <span class="venue-badge">Open Model 2026</span>
+                </div>
+                <p class="authors">Tencent Hunyuan Team</p>
+                <p class="paper-note">Open-source Hunyuan 3.0 preview model for reasoning, coding, and agentic workflows.</p>
+                <div class="paper-links">
+                  <a href="https://huggingface.co/tencent/Hy3-preview" target="_blank" rel="noopener noreferrer">HF</a>
+                  <a href="https://openrouter.ai/tencent/hy3-preview" target="_blank" rel="noopener noreferrer">OpenRouter</a>
+                  <a href="https://www.tencent.com/en-us/articles/2202320.html" target="_blank" rel="noopener noreferrer">Release</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="model-hy2">
+                <div class="publication-header">
+                  <h4>HY2.0</h4>
+                  <span class="venue-badge">Model Family 2025</span>
+                </div>
+                <p class="authors">Tencent Hunyuan Team</p>
+                <p class="paper-note">Next-generation Hunyuan model family for reasoning and instruction-following scenarios.</p>
+                <div class="paper-links">
+                  <a href="https://technode.com/2025/12/08/tencent-releases-hunyuan-2-0-its-next-generation-ai-model/" target="_blank" rel="noopener noreferrer">Release</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="model-hunyuan-turbos">
+                <div class="publication-header">
+                  <h4>Hunyuan-TurboS: Advancing Large Language Models through Mamba-Transformer Synergy and Adaptive Chain-of-Thought</h4>
+                  <span class="venue-badge">Tech Report 2025</span>
+                </div>
+                <p class="authors">Tencent Hunyuan Team</p>
+                <div class="paper-links">
+                  <a href="https://github.com/Tencent-Hunyuan/Hunyuan-TurboS" target="_blank" rel="noopener noreferrer">Report</a>
+                  <a href="https://arxiv.org/abs/2505.15431" target="_blank" rel="noopener noreferrer">arXiv</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="model-hunyuan-t1">
+                <div class="publication-header">
+                  <h4>Hunyuan-T1</h4>
+                  <span class="venue-badge">Tech Page 2025</span>
+                </div>
+                <p class="authors">Tencent Hunyuan Team</p>
+                <div class="paper-links">
+                  <a href="https://tencent.github.io/llm.hunyuan.T1/README_EN.html" target="_blank" rel="noopener noreferrer">Tech page</a>
+                </div>
+              </article>
+
+              <article class="publication-item highlight" id="model-hunyuan-large">
+                <div class="publication-header">
+                  <h4>Hunyuan-Large: An Open-Source MoE Model with 52 Billion Activated Parameters by Tencent</h4>
+                  <span class="venue-badge">arXiv 2024</span>
+                </div>
+                <p class="authors">Tencent Hunyuan Team, including <strong>Chenchen Zhang</strong></p>
+                <p class="paper-note">Open-source MoE LLM with long-context support.</p>
+                <div class="paper-links">
+                  <a href="https://huggingface.co/tencent/Tencent-Hunyuan-Large" target="_blank" rel="noopener noreferrer">HF</a>
+                  <a href="https://arxiv.org/abs/2411.02265" target="_blank" rel="noopener noreferrer">Report</a>
+                  <a href="https://github.com/Tencent-Hunyuan/Tencent-Hunyuan-Large" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="publication-group" aria-labelledby="code-agentic-heading">
+            <h3 id="code-agentic-heading">Code &amp; Agentic LLMs</h3>
+            <div class="publication-list">
+              <article class="publication-item highlight" id="paper-swe-compass">
+                <div class="publication-header">
+                  <h4>SWE-Compass: Towards Unified Evaluation of Agentic Coding Abilities for Large Language Models</h4>
+                  <span class="venue-badge">ICML 2026</span>
+                </div>
+                <p class="authors">Jingxuan Xu, Ken Deng, Weihao Li, Songwei Yu, Yanan Wu, <strong>Chenchen Zhang</strong>, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2511.05459" target="_blank" rel="noopener noreferrer">Paper</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-nl2repo-bench">
+                <div class="publication-header">
+                  <h4>NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents</h4>
+                  <span class="venue-badge">ICML 2026</span>
+                </div>
+                <p class="authors">Jingzhe Ding, Shengda Long, Changxin Pu, Huan Zhou, Daoguang Zan, <strong>Chenchen Zhang</strong>, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2512.12730" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://github.com/multimodal-art-projection/NL2RepoBench" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-diagrams-to-code">
+                <div class="publication-header">
+                  <h4>From Diagrams to Code: Multilingual Programming with Visual Design</h4>
+                  <span class="venue-badge">ICML 2026</span>
+                </div>
+                <p class="authors">Linzheng Chai, Jian Yang, Shukai Liu, Wei Zhang, Liran Wang, <strong>Chenchen Zhang</strong>, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2507.08719" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://github.com/MCEVAL/MMCoder" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-relook">
+                <div class="publication-header">
+                  <h4>ReLook: Vision-Grounded RL with a Multimodal LLM Critic for Agentic Web Coding</h4>
+                  <span class="venue-badge">ACL 2026</span>
+                </div>
+                <p class="authors">Yuhang Li, <strong>Chenchen Zhang</strong>, Ruilin Lv, Ao Liu, Ken Deng, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2510.11498" target="_blank" rel="noopener noreferrer">Paper</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-autocodebench">
+                <div class="publication-header">
+                  <h4>AutoCodeBench: Large Language Models are Automatic Code Benchmark Generators</h4>
+                  <span class="venue-badge">ICLR 2026</span>
+                </div>
+                <p class="authors">Jason Chou, Ao Liu, Yuchi Deng, Zhiying Zeng, Tao Zhang, Yue Mao, <strong>Chenchen Zhang</strong>, et al.</p>
+                <div class="paper-links">
+                  <a href="https://openreview.net/forum?id=fN0MED2Idq" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://autocodebench.github.io/" target="_blank" rel="noopener noreferrer">Project</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-open-coder">
+                <div class="publication-header">
+                  <h4>OpenCoder: The Open Cookbook for Top-Tier Code Large Language Models</h4>
+                  <span class="venue-badge">ACL 2025</span>
+                </div>
+                <p class="authors">Siming Huang, Tianhao Cheng, Jason Klein Liu, Jiaran Hao, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2411.04905" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://github.com/OpenCoder-llm/OpenCoder-llm" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-artifactsbench">
+                <div class="publication-header">
+                  <h4>ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation</h4>
+                  <span class="venue-badge">arXiv 2025</span>
+                </div>
+                <p class="authors"><strong>Chenchen Zhang</strong>, Yuhang Li, Can Xu, Jiaheng Liu, Ao Liu, et al.</p>
+                <p class="paper-note">Automated multimodal evaluation for interactive visual artifacts.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2507.04952" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://github.com/Tencent-Hunyuan/ArtifactsBenchmark" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-codecriticbench">
+                <div class="publication-header">
+                  <h4>CodeCriticBench: A Holistic Code Critique Benchmark for Large Language Models</h4>
+                  <span class="venue-badge">arXiv 2025</span>
+                </div>
+                <p class="authors">Alexander Zhang, Marcus Dong, Jiaheng Liu, Wei Zhang, Yejie Wang, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2502.16614" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://github.com/multimodal-art-projection/CodeCriticBench" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="publication-group" aria-labelledby="rl-heading">
+            <h3 id="rl-heading">RL &amp; Reasoning</h3>
+            <div class="publication-list">
+              <article class="publication-item highlight" id="paper-critic-lean">
+                <div class="publication-header">
+                  <h4>CriticLean: Critic-Guided Reinforcement Learning for Mathematical Formalization</h4>
+                  <span class="venue-badge">ACL 2026</span>
+                </div>
+                <p class="authors">Zhongyuan Peng, Yifan Yao, Kaijing Ma, Shuyue Guo, Yizhe Li, <strong>Chenchen Zhang</strong>, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2507.06181" target="_blank" rel="noopener noreferrer">Paper</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-rl-pretraining-data">
+                <div class="publication-header">
+                  <h4>Reinforcement Learning on Pre-Training Data</h4>
+                  <span class="venue-badge">ACL 2026</span>
+                </div>
+                <p class="authors">Siheng Li, Kejiao Li, Zenan Xu, Guanhua Huang, Zihao Zheng, <strong>Chenchen Zhang</strong>, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2509.19249" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://openreview.net/forum?id=bGNxj19loZ" target="_blank" rel="noopener noreferrer">OpenReview</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-rhombus">
+                <div class="publication-header">
+                  <h4>Rhombus: Incentivizing Coordination in Parallel Thinking through Reinforcement Learning</h4>
+                  <span class="venue-badge">ACL 2026</span>
+                </div>
+                <p class="authors">Including <strong>Chenchen Zhang</strong> et al.</p>
+                <div class="paper-links">
+                  <a href="https://openreview.net/forum?id=gUTrZ4l9NZ" target="_blank" rel="noopener noreferrer">OpenReview</a>
+                </div>
+              </article>
+
+              <article class="publication-item highlight" id="paper-credit-assignment">
+                <div class="publication-header">
+                  <h4>From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models</h4>
+                  <span class="venue-badge">arXiv 2026</span>
+                </div>
+                <p class="authors"><strong>Chenchen Zhang</strong> et al.</p>
+                <p class="paper-note">Survey and resource hub for reinforcement learning credit assignment in LLMs and agents.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2604.09459" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://github.com/xxzcc/Awesome-Credit-Assignment-in-LLM-RL" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="publication-group" aria-labelledby="foundation-heading">
+            <h3 id="foundation-heading">Foundation, Pretraining &amp; Efficiency</h3>
+            <div class="publication-list">
+              <article class="publication-item" id="paper-map-neo">
+                <div class="publication-header">
+                  <h4>MAP-Neo: Highly Capable and Transparent Bilingual Large Language Model Series</h4>
+                  <span class="venue-badge">arXiv 2024</span>
+                </div>
+                <p class="authors">Ge Zhang, Scott Qu, Jiaheng Liu, <strong>Chenchen Zhang</strong>, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2405.19327" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://github.com/multimodal-art-projection/MAP-NEO" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </article>
+
+              <article class="publication-item highlight" id="paper-ddk">
+                <div class="publication-header">
+                  <h4>DDK: Distilling Domain Knowledge for Efficient Large Language Models</h4>
+                  <span class="venue-badge">NeurIPS 2024</span>
+                </div>
+                <p class="authors">Jiaheng Liu, <strong>Chenchen Zhang</strong>, Jinyang Guo, Yuanxing Zhang, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2407.16154" target="_blank" rel="noopener noreferrer">Paper</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-d-cpt-law">
+                <div class="publication-header">
+                  <h4>D-CPT Law: Domain-specific Continual Pre-Training Scaling Law for Large Language Models</h4>
+                  <span class="venue-badge">NeurIPS 2024</span>
+                </div>
+                <p class="authors">Haoran Que, Jiaheng Liu, Ge Zhang, <strong>Chenchen Zhang</strong>, et al.</p>
+                <div class="paper-links">
+                  <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/a4628e9fbd3002a554923642f74d5d6b-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Paper</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-e2-llm">
+                <div class="publication-header">
+                  <h4>E2-LLM: Efficient and Extreme Length Extension of Large Language Models</h4>
+                  <span class="venue-badge">ACL 2024</span>
+                </div>
+                <p class="authors">Jiaheng Liu, Zhiqi Bai, Yuanxing Zhang, <strong>Chenchen Zhang</strong>, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2401.06951" target="_blank" rel="noopener noreferrer">Paper</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="publication-group" aria-labelledby="multi-heading">
+            <h3 id="multi-heading">Multimodal, Evaluation &amp; Surveys</h3>
+            <div class="publication-list">
+              <article class="publication-item" id="paper-omnivideobench">
+                <div class="publication-header">
+                  <h4>OmniVideoBench: Towards Audio-Visual Understanding Evaluation for Omni MLLMs</h4>
+                  <span class="venue-badge">ICLR 2026</span>
+                </div>
+                <p class="authors">Caorui Li, Yu Chen, Yiyan Ji, Jin Xu, Zhenyu Cui, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2510.10689" target="_blank" rel="noopener noreferrer">Paper</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-mtu-bench">
+                <div class="publication-header">
+                  <h4>MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models</h4>
+                  <span class="venue-badge">ICLR 2025</span>
+                </div>
+                <p class="authors">Pei Wang, Yanan Wu, Zekun Wang, Jiaheng Liu, Xiaoshuai Song, et al.</p>
+                <div class="paper-links">
+                  <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4d13b2d99519c5415661dad44ab7edcd-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://mtu-bench-team.github.io/" target="_blank" rel="noopener noreferrer">Project</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-conceptmath">
+                <div class="publication-header">
+                  <h4>ConceptMath: A Bilingual Concept-wise Benchmark for Mathematical Reasoning of LLMs</h4>
+                  <span class="venue-badge">ACL 2024</span>
+                </div>
+                <p class="authors">Yanan Wu, Jie Liu, Xingyuan Bu, Jiaheng Liu, <strong>Chenchen Zhang</strong>, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2402.14660" target="_blank" rel="noopener noreferrer">Paper</a>
+                </div>
+              </article>
+
+              <article class="publication-item" id="paper-giebench">
+                <div class="publication-header">
+                  <h4>GIEBench: Towards Holistic Evaluation of Group Identity-based Empathy for Large Language Models</h4>
+                  <span class="venue-badge">EMNLP 2024</span>
+                </div>
+                <p class="authors">Leyan Wang, Yonggang Jin, Tianhao Shen, Tianyu Zheng, Xinrun Du, <strong>Chenchen Zhang</strong>, et al.</p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2406.14903" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://github.com/GIEBench/GIEBench" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </article>
+
+              <article class="publication-item highlight" id="paper-long-context-survey">
+                <div class="publication-header">
+                  <h4>A Comprehensive Survey on Long Context Language Modeling</h4>
+                  <span class="venue-badge">Survey</span>
+                </div>
+                <p class="authors">LCLM-Horizon contributors</p>
+                <div class="paper-links">
+                  <a href="https://github.com/LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section-shell two-column" id="background">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">Background</p>
+          <h2>Background</h2>
+          <p>Research and engineering roles across large-scale language model systems.</p>
+        </div>
+
+        <!-- TODO: Add visible Education only after owner provides education_school, degree, and date_range. Do not publish placeholder education details. -->
+        <div class="background-content">
+          <h3 class="subsection-title">Experience</h3>
+          <div class="experience-list">
+            <article class="experience-item">
+              <div>
+                <h3 class="company-heading">
+                  <img class="company-logo company-logo-wide" src="assets/img/tencent.svg" alt="" aria-hidden="true" />
+                  Tencent
+                </h3>
+                <p>Hunyuan Department · Senior Researcher</p>
+              </div>
+              <time>2024.06 - Present</time>
+            </article>
+            <article class="experience-item">
+              <div>
+                <h3 class="company-heading">
+                  <img class="company-logo company-logo-wide" src="assets/img/alibaba.svg" alt="" aria-hidden="true" />
+                  Alibaba
+                </h3>
+                <p>Algorithm Engineer</p>
+              </div>
+              <time>2022.06 - 2024.06</time>
+            </article>
+            <article class="experience-item">
+              <div>
+                <h3 class="company-heading">
+                  <img class="company-logo company-logo-wide" src="assets/img/alibaba.svg" alt="" aria-hidden="true" />
+                  Alibaba
+                </h3>
+                <p>Algorithm Engineer Intern</p>
+              </div>
+              <time>2021.04 - 2022.06</time>
+            </article>
+            <article class="experience-item">
+              <div>
+                <h3 class="company-heading">
+                  Baidu
+                </h3>
+                <p>Algorithm Engineer Intern</p>
+              </div>
+              <time>2020.09 - 2021.06</time>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-meta">
+        <p>© <span data-year></span> Chenchen Zhang.</p>
+        <p class="pageviews" id="busuanzi_container_site_pv">
+          <img class="footer-icon" src="assets/img/globe.svg" alt="" aria-hidden="true" />
+          <span>Total pageviews</span>
+          <strong id="busuanzi_value_site_pv">--</strong>
+        </p>
+        <p class="pageviews" id="busuanzi_container_site_uv">
+          <img class="footer-icon" src="assets/img/users.svg" alt="" aria-hidden="true" />
+          <span>Unique visitors</span>
+          <strong id="busuanzi_value_site_uv">--</strong>
+        </p>
+        <!-- Add a ClustrMaps, Umami, Plausible, or custom analytics embed here after the public domain is live. -->
+      </div>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  </body>
+</html>
