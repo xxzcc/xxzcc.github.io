@@ -88,7 +88,7 @@
             multimodal systems, evaluation, and data-centric model iteration.
           </p>
           <p class="identity-meta">
-            Core contributor to Hy3.0 preview, HY2.0, Hunyuan-TurboS, Hunyuan-T1, and Hunyuan-Large
+            Core contributor to Hy3.0 preview, HY2.0, Hunyuan-A13B, Hunyuan-TurboS, Hunyuan-T1, and Hunyuan-Large
           </p>
           <div class="profile-actions" aria-label="Profile links">
             <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=WmzUNaQAAAAJ" target="_blank" rel="noopener noreferrer">
@@ -184,6 +184,16 @@
             </div>
           </article>
           <article class="timeline-item">
+            <time>06/2025</time>
+            <h3>Hunyuan-A13B</h3>
+            <p>Efficient open-source MoE with 13B active parameters, hybrid reasoning, long context, and agent capabilities.</p>
+            <div class="paper-links">
+              <a href="#model-hunyuan-a13b">Details</a>
+              <a href="https://huggingface.co/tencent/Hunyuan-A13B-Instruct" target="_blank" rel="noopener noreferrer">HF</a>
+              <a href="https://github.com/Tencent-Hunyuan/Hunyuan-A13B" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </article>
+          <article class="timeline-item">
             <time>12/2025</time>
             <h3>HY2.0</h3>
             <p>Think and Instruct variants for reasoning and instruction-following.</p>
@@ -219,7 +229,7 @@
           <a class="map-node map-node-primary" href="#models">
             <span>Foundation</span>
             <strong>Hunyuan Models</strong>
-            <em>Hy3.0 · HY2.0 · T1 · TurboS · Large</em>
+            <em>Hy3.0 · HY2.0 · A13B · T1 · TurboS · Large</em>
           </a>
           <a class="map-node" href="#paper-critic-lean">
             <span>Optimization</span>
@@ -246,10 +256,11 @@
         <div class="direction-list">
           <article class="research-direction">
             <h3>Pretraining &amp; Foundation Models</h3>
-            <p>Hy3.0 preview, HY2.0, Hunyuan-TurboS, Hunyuan-T1, Hunyuan-Large, MAP-Neo, OpenCoder, D-CPT Law, E2-LLM, DDK.</p>
+            <p>Hy3.0 preview, HY2.0, Hunyuan-A13B, Hunyuan-TurboS, Hunyuan-T1, Hunyuan-Large, MAP-Neo, OpenCoder, D-CPT Law, E2-LLM, DDK.</p>
             <div class="representative-links" aria-label="Representative pretraining and foundation model work">
               <a href="#model-hy3-preview">Hy3.0 preview</a>
               <a href="#model-hy2">HY2.0</a>
+              <a href="#model-hunyuan-a13b">A13B</a>
               <a href="#model-hunyuan-turbos">TurboS</a>
               <a href="#model-hunyuan-t1">T1</a>
               <a href="#model-hunyuan-large">Hunyuan-Large</a>
@@ -332,6 +343,10 @@
           <li>
             <time datetime="2025-12">12/2025</time>
             <p>Core contributor to the <a href="#model-hy2"><strong>HY2.0</strong></a> model family.</p>
+          </li>
+          <li>
+            <time datetime="2025-06">06/2025</time>
+            <p>Core contributor to open-source <a href="#model-hunyuan-a13b"><strong>Hunyuan-A13B</strong></a>, an efficient MoE model with hybrid reasoning and agent capabilities.</p>
           </li>
           <li>
             <time datetime="2025-05">05/2025</time>
@@ -428,6 +443,27 @@
                 </div>
               </article>
 
+              <article class="publication-item highlight" id="model-hunyuan-a13b" data-category="models rl code">
+                <div class="publication-header">
+                  <h4>Hunyuan-A13B: An Efficient Open-Source MoE Model with 13B Active Parameters</h4>
+                  <span class="venue-badge">Open Model 2025</span>
+                </div>
+                <p class="authors">Tencent Hunyuan Team</p>
+                <p class="paper-note">Open-source fine-grained MoE model with 80B total parameters, 13B active parameters, hybrid reasoning, long-context support, and strong agent capabilities.</p>
+                <p class="paper-note"><strong>My role:</strong> Core author and contributor, with contribution level comparable to Hunyuan-T1.</p>
+                <div class="impact-tags" aria-label="Impact tags">
+                  <span>Open-source</span>
+                  <span>MoE</span>
+                  <span>13B active</span>
+                  <span>Hybrid reasoning</span>
+                  <span>Agent capabilities</span>
+                </div>
+                <div class="paper-links">
+                  <a href="https://huggingface.co/tencent/Hunyuan-A13B-Instruct" target="_blank" rel="noopener noreferrer">HF</a>
+                  <a href="https://github.com/Tencent-Hunyuan/Hunyuan-A13B" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </article>
+
               <article class="publication-item" id="model-hunyuan-turbos" data-category="models rl">
                 <div class="publication-header">
                   <h4>Hunyuan-TurboS: Advancing Large Language Models through Mamba-Transformer Synergy and Adaptive Chain-of-Thought</h4>
@@ -468,7 +504,7 @@
                   <h4>Hunyuan-Large: An Open-Source MoE Model with 52 Billion Activated Parameters by Tencent</h4>
                   <span class="venue-badge">arXiv 2024</span>
                 </div>
-                <p class="authors">Tencent Hunyuan Team, including <strong>Chenchen Zhang</strong></p>
+                <p class="authors">Tencent Hunyuan Team</p>
                 <p class="paper-note">Open-source MoE LLM with long-context support.</p>
                 <p class="paper-note"><strong>My role:</strong> Core contributor to model development and evaluation for the Hunyuan open-source LLM family.</p>
                 <div class="impact-tags" aria-label="Impact tags">
@@ -722,8 +758,10 @@
                   <span class="venue-badge">NeurIPS 2024</span>
                 </div>
                 <p class="authors">Jiaheng Liu, <strong>Chenchen Zhang</strong>, Jinyang Guo, Yuanxing Zhang, et al.</p>
+                <p class="paper-note"><strong>My role:</strong> Co-first author.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>NeurIPS 2024</span>
+                  <span>Co-first author</span>
                   <span>Efficient LLMs</span>
                 </div>
                 <div class="paper-links">
@@ -737,8 +775,10 @@
                   <span class="venue-badge">NeurIPS 2024</span>
                 </div>
                 <p class="authors">Haoran Que, Jiaheng Liu, Ge Zhang, <strong>Chenchen Zhang</strong>, et al.</p>
+                <p class="paper-note"><strong>My role:</strong> Core author; wrote most of the underlying codebase for domain-specific continual pre-training and scaling-law experiments.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>NeurIPS 2024</span>
+                  <span>Core author</span>
                   <span>Scaling law</span>
                 </div>
                 <div class="paper-links">
