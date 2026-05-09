@@ -677,6 +677,10 @@ h4 {
   line-height: 1.4;
 }
 
+.paper-note strong {
+  color: var(--text);
+}
+
 .impact-tags {
   display: flex;
   flex-wrap: wrap;
@@ -809,6 +813,26 @@ h4 {
 .pageviews strong {
   color: var(--text);
   font-size: 15px;
+}
+
+.site-stats {
+  position: relative;
+}
+
+.site-stats[open] {
+  flex-basis: 100%;
+}
+
+.site-stats summary {
+  color: var(--accent);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.stats-content {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
 }
 
 .visitor-map {
