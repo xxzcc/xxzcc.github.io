@@ -300,6 +300,168 @@ h4 {
   font-size: 17px;
 }
 
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.focus-card {
+  border-top: 1px solid var(--border);
+  padding: 14px 0 0;
+  transition: transform 160ms ease;
+}
+
+.focus-index {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.focus-card h3,
+.timeline-item h3,
+.map-node strong {
+  font-size: 17px;
+}
+
+.focus-card h3 {
+  margin-bottom: 6px;
+}
+
+.focus-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.model-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.model-timeline::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  min-height: 210px;
+  border-right: 1px solid var(--border);
+  padding: 18px 16px 16px 0;
+  transition: transform 160ms ease;
+}
+
+.timeline-item:last-child {
+  border-right: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 0;
+  z-index: 1;
+  width: 13px;
+  height: 13px;
+  border: 2px solid var(--surface);
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.timeline-item.featured::before {
+  background: var(--gold);
+  box-shadow: 0 0 0 1px var(--gold);
+}
+
+.timeline-item time {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.timeline-item h3 {
+  margin-bottom: 7px;
+}
+
+.timeline-item p {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.research-map {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.map-node {
+  display: grid;
+  align-content: start;
+  min-height: 142px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 13px;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.map-node:hover,
+.map-node:focus-visible {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  box-shadow: var(--shadow);
+  color: inherit;
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.map-node span {
+  margin-bottom: 6px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.map-node strong {
+  margin-bottom: 8px;
+  color: var(--text);
+  line-height: 1.25;
+}
+
+.map-node em {
+  color: var(--muted);
+  font-size: 13px;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+.map-node-primary {
+  background: var(--accent-soft);
+}
+
 .direction-list {
   display: grid;
   gap: 0;
@@ -393,6 +555,39 @@ h4 {
   gap: 28px;
 }
 
+.publication-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.filter-button {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  padding: 7px 11px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.filter-button:hover,
+.filter-button:focus-visible,
+.filter-button.is-active {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  outline: none;
+}
+
 .publication-group > h3 {
   display: flex;
   align-items: center;
@@ -419,6 +614,14 @@ h4 {
   gap: 2px;
   border-bottom: 1px solid var(--border);
   padding: 11px 0;
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
+}
+
+.publication-item.is-hidden,
+.publication-group.is-hidden {
+  display: none;
 }
 
 .publication-item.highlight {
@@ -472,6 +675,24 @@ h4 {
 .paper-note {
   font-size: 14px;
   line-height: 1.4;
+}
+
+.impact-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 3px;
+}
+
+.impact-tags span {
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-soft) 74%, var(--surface));
+  color: var(--accent-strong);
+  padding: 3px 7px;
+  font-size: 11px;
+  font-weight: 850;
+  line-height: 1.2;
 }
 
 .paper-links {
@@ -613,9 +834,65 @@ h4 {
   font-weight: 800;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+      opacity 420ms ease,
+      transform 420ms ease;
+  }
+
+  .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .publication-item:hover,
+  .focus-card:hover,
+  .timeline-item:hover {
+    transform: translateY(-1px);
+  }
+}
+
 @media (max-width: 960px) {
   .two-column {
     grid-template-columns: 1fr;
+  }
+
+  .focus-grid,
+  .research-map {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .model-timeline {
+    grid-template-columns: 1fr;
+    border-bottom: 0;
+  }
+
+  .model-timeline::before {
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: 6px;
+    width: 1px;
+    height: auto;
+  }
+
+  .timeline-item {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0 14px 28px;
+  }
+
+  .timeline-item::before {
+    top: 19px;
+    left: 0;
+  }
+
+  .timeline-item time {
+    margin-bottom: 6px;
   }
 
   .hero {
@@ -688,6 +965,24 @@ h4 {
   .profile-actions a {
     font-size: 13px;
     line-height: 1.35;
+  }
+
+  .focus-grid,
+  .research-map {
+    grid-template-columns: 1fr;
+  }
+
+  .map-node {
+    min-height: auto;
+  }
+
+  .publication-filters {
+    gap: 6px;
+  }
+
+  .filter-button {
+    padding: 7px 9px;
+    font-size: 12px;
   }
 
   .publication-header {

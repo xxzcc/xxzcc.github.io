@@ -83,3 +83,61 @@ if (canObserveSections) {
 } else {
   // No-op fallback: anchor navigation still works; active section state is disabled.
 }
+
+const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
+const publicationItems = Array.from(document.querySelectorAll("[data-category]"));
+const publicationGroups = Array.from(document.querySelectorAll("[data-publication-group]"));
+
+if (filterButtons.length > 0 && publicationItems.length > 0) {
+  const setPublicationFilter = (filter) => {
+    filterButtons.forEach((button) => {
+      const isActive = button.dataset.filter === filter;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    publicationItems.forEach((item) => {
+      const categories = item.dataset.category?.split(/\s+/) ?? [];
+      const shouldShow = filter === "all" || categories.includes(filter);
+      item.classList.toggle("is-hidden", !shouldShow);
+    });
+
+    publicationGroups.forEach((group) => {
+      const visibleItems = group.querySelectorAll("[data-category]:not(.is-hidden)");
+      group.classList.toggle("is-hidden", visibleItems.length === 0);
+    });
+  };
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      setPublicationFilter(button.dataset.filter || "all");
+    });
+  });
+}
+
+const revealTargets = Array.from(
+  document.querySelectorAll(
+    ".section-shell, .focus-card, .timeline-item, .map-node, .publication-item"
+  )
+);
+
+if ("IntersectionObserver" in window && revealTargets.length > 0) {
+  revealTargets.forEach((target) => target.classList.add("reveal-on-scroll"));
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      rootMargin: "0px 0px -8% 0px",
+      threshold: 0.08,
+    }
+  );
+
+  revealTargets.forEach((target) => revealObserver.observe(target));
+}
