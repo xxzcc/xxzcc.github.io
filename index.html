@@ -83,7 +83,7 @@
           <p class="hero-summary">
             I am a Senior Researcher at Tencent Hunyuan, where I work on RL
             post-training and agentic code-reasoning systems for foundation
-            models. I have been a core contributor to Hy3.0 preview, HY2.0,
+            models. I have been a core contributor to Hy3, HY2.0,
             Hunyuan-A13B, Hunyuan-TurboS, Hunyuan-T1, and Hunyuan-Large.
           </p>
           <p class="identity-meta">
@@ -192,13 +192,14 @@
             </div>
           </article>
           <article class="timeline-item featured">
-            <time>04/2026</time>
-            <h3>Hy3.0 preview</h3>
-            <p>Open-source preview model with reasoning, coding, and agentic workflows.</p>
+            <time>07/2026</time>
+            <h3>Hy3</h3>
+            <p>Open-source 295B MoE model with 21B active parameters, 256K context, and strong agent capabilities.</p>
             <div class="paper-links">
               <a href="#model-hy3-preview">Details</a>
-              <a href="https://huggingface.co/tencent/Hy3-preview" target="_blank" rel="noopener noreferrer">HF</a>
-              <a href="https://openrouter.ai/tencent/hy3-preview" target="_blank" rel="noopener noreferrer">OpenRouter</a>
+              <a href="https://github.com/Tencent-Hunyuan/Hy3" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://huggingface.co/tencent/Hy3" target="_blank" rel="noopener noreferrer">HF</a>
+              <a href="https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/" target="_blank" rel="noopener noreferrer">Release</a>
             </div>
           </article>
         </div>
@@ -219,7 +220,7 @@
           <a class="map-node map-node-primary" href="#models">
             <span>Foundation</span>
             <strong>Hunyuan Models</strong>
-            <em>Hy3.0 · HY2.0 · A13B · T1 · TurboS · Large</em>
+            <em>Hy3 · HY2.0 · A13B · T1 · TurboS · Large</em>
           </a>
           <a class="map-node" href="#paper-critic-lean">
             <span>Optimization</span>
@@ -229,7 +230,7 @@
           <a class="map-node" href="#paper-relook">
             <span>Agents</span>
             <strong>Agentic RL</strong>
-            <em>ReLook · Rhombus · Credit Assignment</em>
+            <em>ReLook · Orchestration Traces · Credit Assignment</em>
           </a>
           <a class="map-node" href="#paper-swe-compass">
             <span>Code</span>
@@ -239,16 +240,16 @@
           <a class="map-node" href="#paper-omnivideobench">
             <span>Evaluation</span>
             <strong>Multimodal &amp; Tool Use</strong>
-            <em>OmniVideoBench · MTU-Bench · ArtifactsBench</em>
+            <em>MM-BrowseComp · OmniVideoBench · ArtifactsBench</em>
           </a>
         </div>
 
         <div class="direction-list">
           <article class="research-direction">
             <h3>Pretraining &amp; Foundation Models</h3>
-            <p>Hy3.0 preview, HY2.0, Hunyuan-A13B, Hunyuan-TurboS, Hunyuan-T1, Hunyuan-Large, MAP-Neo, OpenCoder, D-CPT Law, E2-LLM, DDK.</p>
+            <p>Hy3, HY2.0, Hunyuan-A13B, Hunyuan-TurboS, Hunyuan-T1, Hunyuan-Large, MAP-Neo, OpenCoder, D-CPT Law, E2-LLM, DDK.</p>
             <div class="representative-links" aria-label="Representative pretraining and foundation model work">
-              <a href="#model-hy3-preview">Hy3.0 preview</a>
+              <a href="#model-hy3-preview">Hy3</a>
               <a href="#model-hy2">HY2.0</a>
               <a href="#model-hunyuan-a13b">A13B</a>
               <a href="#model-hunyuan-turbos">TurboS</a>
@@ -262,7 +263,7 @@
           </article>
           <article class="research-direction">
             <h3>Reasoning &amp; Agentic RL</h3>
-            <p>Math/STEM reasoning optimization, RL for code and reasoning models, reinforcement learning on pre-training data, critic-guided RL, parallel thinking, and credit assignment.</p>
+            <p>Math/STEM reasoning optimization, RL for code and reasoning models, reinforcement learning on pre-training data, critic-guided RL, multi-agent orchestration, parallel thinking, and credit assignment.</p>
             <div class="representative-links" aria-label="Representative reasoning and agentic RL work">
               <a href="#model-hunyuan-t1">Hunyuan-T1</a>
               <a href="#paper-rl-pretraining-data">RLPT</a>
@@ -270,6 +271,7 @@
               <a href="#paper-conceptmath">ConceptMath</a>
               <a href="#paper-mtu-bench">MTU-Bench</a>
               <a href="#paper-credit-assignment">Credit Assignment</a>
+              <a href="#paper-orchestration-traces">Orchestration Traces</a>
               <a href="#paper-relook">ReLook</a>
               <a href="#paper-rhombus">Rhombus</a>
             </div>
@@ -287,6 +289,7 @@
               <a href="#paper-open-coder">OpenCoder</a>
               <a href="#paper-artifactsbench">ArtifactsBench</a>
               <a href="#paper-codecriticbench">CodeCriticBench</a>
+              <a href="#paper-workflow-gym">Workflow-GYM</a>
             </div>
           </article>
           <article class="research-direction">
@@ -294,6 +297,7 @@
             <p>Math, code, tool-use, audio-visual, multimodal browsing, group identity evaluation, and survey resources.</p>
             <div class="representative-links" aria-label="Representative evaluation and multimodal work">
               <a href="#paper-omnivideobench">OmniVideoBench</a>
+              <a href="#paper-mm-browsecomp">MM-BrowseComp</a>
               <a href="#paper-mtu-bench">MTU-Bench</a>
               <a href="#paper-conceptmath">ConceptMath</a>
               <a href="#paper-giebench">GIEBench</a>
@@ -315,6 +319,10 @@
 
         <ol class="news-list">
           <li>
+            <time datetime="2026-07">07/2026</time>
+            <p>Core contributor to the formal <a href="#model-hy3-preview"><strong>Hy3</strong></a> release: an open-source 295B MoE model with 21B active parameters and 256K context.</p>
+          </li>
+          <li>
             <time datetime="2026-05">05/2026</time>
             <p>ICML 2026: <a href="#paper-swe-compass"><strong>SWE-Compass</strong></a>, <a href="#paper-nl2repo-bench"><strong>NL2Repo-Bench</strong></a>, and <a href="#paper-diagrams-to-code"><strong>From Diagrams to Code</strong></a>.</p>
           </li>
@@ -324,7 +332,7 @@
           </li>
           <li>
             <time datetime="2026-04">04/2026</time>
-            <p><a href="#model-hy3-preview"><strong>Hy3.0 preview</strong></a> open-sourced; #1 on OpenRouter daily global API usage.</p>
+            <p><a href="https://github.com/Tencent-Hunyuan/Hy3-preview" target="_blank" rel="noopener noreferrer"><strong>Hy3 Preview</strong></a> open-sourced and reached #1 on OpenRouter daily global API usage.</p>
           </li>
           <li>
             <time datetime="2026-01">01/2026</time>
@@ -398,21 +406,22 @@
             <div class="publication-list">
               <article class="publication-item highlight" id="model-hy3-preview" data-category="models code rl">
                 <div class="publication-header">
-                  <h4>Hy3.0 preview</h4>
+                  <h4>Hy3</h4>
                   <span class="venue-badge">Open Model 2026</span>
                 </div>
                 <p class="authors">Tencent Hunyuan Team</p>
-                <p class="paper-note">Open-source Hunyuan 3.0 preview model for reasoning, coding, and agentic workflows.</p>
+                <p class="paper-note">Open-source 295B-parameter MoE model with 21B active parameters and 256K context, built for reasoning, coding, long-context, and agentic workflows.</p>
                 <p class="paper-note"><strong>My role:</strong> Core contributor to post-training, RL recipes, and reasoning optimization across STEM and code.</p>
                 <div class="impact-tags" aria-label="Impact tags">
-                  <span>Open-source</span>
-                  <span>OpenRouter #1</span>
-                  <span>HF</span>
+                  <span>295B MoE</span>
+                  <span>21B active</span>
+                  <span>256K context</span>
+                  <span>Apache 2.0</span>
                 </div>
                 <div class="paper-links">
-                  <a href="https://huggingface.co/tencent/Hy3-preview" target="_blank" rel="noopener noreferrer">HF</a>
-                  <a href="https://openrouter.ai/tencent/hy3-preview" target="_blank" rel="noopener noreferrer">OpenRouter</a>
-                  <a href="https://www.tencent.com/en-us/articles/2202320.html" target="_blank" rel="noopener noreferrer">Release</a>
+                  <a href="https://github.com/Tencent-Hunyuan/Hy3" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://huggingface.co/tencent/Hy3" target="_blank" rel="noopener noreferrer">HF</a>
+                  <a href="https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/" target="_blank" rel="noopener noreferrer">Release</a>
                 </div>
               </article>
 
@@ -590,6 +599,23 @@
                 </div>
               </article>
 
+              <article class="publication-item" id="paper-workflow-gym" data-category="code evaluation">
+                <div class="publication-header">
+                  <h4>Workflow-GYM: Towards Long-Horizon Evaluation of Computer-use Agentic tasks in Real-World Professional Fields</h4>
+                  <span class="venue-badge">arXiv 2026</span>
+                </div>
+                <p class="authors">Liya Zhu, Jingzhe Ding, Jian Zhang, Jianbo Xue, Shihao Liang, et al., including <strong>Chenchen Zhang</strong></p>
+                <p class="paper-note">Long-horizon evaluation of computer-use agents across professional workflows and specialized software.</p>
+                <div class="impact-tags" aria-label="Impact tags">
+                  <span>GUI agents</span>
+                  <span>Long-horizon evaluation</span>
+                  <span>Professional workflows</span>
+                </div>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2606.11042" target="_blank" rel="noopener noreferrer">Paper</a>
+                </div>
+              </article>
+
               <article class="publication-item" id="paper-autocodebench" data-category="code evaluation">
                 <div class="publication-header">
                   <h4>AutoCodeBench: Large Language Models are Automatic Code Benchmark Generators</h4>
@@ -724,6 +750,24 @@
                   <a href="https://github.com/xxzcc/Awesome-Credit-Assignment-in-LLM-RL" target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
               </article>
+
+              <article class="publication-item highlight" id="paper-orchestration-traces" data-category="rl survey">
+                <div class="publication-header">
+                  <h4>Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces</h4>
+                  <span class="venue-badge">arXiv 2026</span>
+                </div>
+                <p class="authors"><strong>Chenchen Zhang</strong></p>
+                <p class="paper-note">A framework and resource hub for learning how multi-agent systems spawn, delegate, communicate, aggregate, and stop.</p>
+                <div class="impact-tags" aria-label="Impact tags">
+                  <span>Multi-agent RL</span>
+                  <span>Orchestration traces</span>
+                  <span>Resource hub</span>
+                </div>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2605.02801" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://github.com/xxzcc/awesome-llm-mas-rl" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </article>
             </div>
           </section>
 
@@ -792,6 +836,23 @@
           <section class="publication-group" aria-labelledby="multi-heading" data-publication-group>
             <h3 id="multi-heading">Multimodal, Evaluation &amp; Surveys</h3>
             <div class="publication-list">
+              <article class="publication-item highlight" id="paper-mm-browsecomp" data-category="evaluation">
+                <div class="publication-header">
+                  <h4>MM-BrowseComp: A Comprehensive Benchmark for Multimodal Browsing Agents</h4>
+                  <span class="venue-badge">arXiv 2025</span>
+                </div>
+                <p class="authors">Shilong Li, Xingyuan Bu, Wenjie Wang, Jiaheng Liu, Jun Dong, et al., including <strong>Chenchen Zhang</strong></p>
+                <p class="paper-note">A benchmark for multimodal retrieval and reasoning over text, images, and videos during web browsing.</p>
+                <div class="impact-tags" aria-label="Impact tags">
+                  <span>Multimodal agents</span>
+                  <span>Browsing benchmark</span>
+                  <span>Evaluation</span>
+                </div>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2508.13186" target="_blank" rel="noopener noreferrer">Paper</a>
+                </div>
+              </article>
+
               <article class="publication-item" id="paper-omnivideobench" data-category="evaluation">
                 <div class="publication-header">
                   <h4>OmniVideoBench: Towards Audio-Visual Understanding Evaluation for Omni MLLMs</h4>
@@ -925,7 +986,7 @@
     <footer class="site-footer">
       <div class="footer-meta">
         <p>© <span data-year></span> Chenchen Zhang.</p>
-        <p>Last updated May 2026.</p>
+        <p>Last updated August 2026.</p>
         <details class="site-stats">
           <summary>Site stats</summary>
           <div class="stats-content">
