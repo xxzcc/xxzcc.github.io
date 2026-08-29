@@ -84,7 +84,7 @@
           <p class="hero-summary">
             I am a Senior Researcher at Tencent Hunyuan, where I work on RL
             post-training, agentic RL, multi-agent RL, and code-reasoning
-            systems for foundation models. I have been a core contributor to Hy3, HY2.0,
+            systems for foundation models. I have been a core contributor to Hy4 preview, Hy3, HY2.0,
             Hunyuan-A13B, Hunyuan-TurboS, Hunyuan-T1, and Hunyuan-Large.
           </p>
           <p class="identity-meta">
@@ -155,22 +155,14 @@
         </div>
         <div class="model-timeline" aria-label="Hunyuan model family timeline">
           <article class="timeline-item">
-            <time>11/2024</time>
-            <h3>Hunyuan-Large</h3>
-            <p>Open-source MoE model with long-context support.</p>
+            <time>11/2024–03/2025</time>
+            <h3>Hunyuan-Large → Hunyuan-T1</h3>
+            <p>Hunyuan-Large established the long-context MoE pre-training and fast-thinking foundation; Hunyuan-T1 extended it with slow-thinking reasoning and code-reasoning post-training.</p>
             <div class="paper-links">
-              <a href="#model-hunyuan-large">Details</a>
-              <a href="https://huggingface.co/tencent/Tencent-Hunyuan-Large" target="_blank" rel="noopener noreferrer">HF</a>
-              <a href="https://arxiv.org/abs/2411.02265" target="_blank" rel="noopener noreferrer">Report</a>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <time>03/2025</time>
-            <h3>Hunyuan-T1</h3>
-            <p>Reasoning-focused model with code-reasoning optimization and code evaluation.</p>
-            <div class="paper-links">
-              <a href="#model-hunyuan-t1">Details</a>
-              <a href="https://tencent.github.io/llm.hunyuan.T1/README_EN.html" target="_blank" rel="noopener noreferrer">Tech page</a>
+              <a href="#model-hunyuan-large">Large details</a>
+              <a href="#model-hunyuan-t1">T1 details</a>
+              <a href="https://arxiv.org/abs/2411.02265" target="_blank" rel="noopener noreferrer">Large report</a>
+              <a href="https://tencent.github.io/llm.hunyuan.T1/README_EN.html" target="_blank" rel="noopener noreferrer">T1 tech page</a>
             </div>
           </article>
           <article class="timeline-item">
@@ -192,7 +184,7 @@
               <a href="#model-hy2">Details</a>
             </div>
           </article>
-          <article class="timeline-item featured">
+          <article class="timeline-item">
             <time>07/2026</time>
             <h3>Hy3</h3>
             <p>Open-source 295B MoE model with 21B active parameters, 256K context, and strong agent capabilities.</p>
@@ -201,6 +193,17 @@
               <a href="https://github.com/Tencent-Hunyuan/Hy3" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a href="https://huggingface.co/tencent/Hy3" target="_blank" rel="noopener noreferrer">HF</a>
               <a href="https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/" target="_blank" rel="noopener noreferrer">Release</a>
+            </div>
+          </article>
+          <article class="timeline-item featured">
+            <time>08/2026</time>
+            <h3>Hy4 preview</h3>
+            <p>Open-source 770B MoE flagship with 49B active parameters, 1M context, and frontier-level performance across coding, productivity, scientific research, and agentic tasks.</p>
+            <div class="paper-links">
+              <a href="#model-hy4-preview">Details</a>
+              <a href="https://github.com/Tencent-Hunyuan/Hy4-preview" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://huggingface.co/tencent/Hy4-preview" target="_blank" rel="noopener noreferrer">HF</a>
+              <a href="https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/" target="_blank" rel="noopener noreferrer">Release</a>
             </div>
           </article>
         </div>
@@ -221,7 +224,7 @@
           <a class="map-node map-node-primary" href="#models">
             <span>Foundation</span>
             <strong>Hunyuan Models</strong>
-            <em>Hy3 · HY2.0 · A13B · T1 · TurboS · Large</em>
+            <em>Hy4 preview · Hy3 · HY2.0 · A13B · T1 · TurboS · Large</em>
           </a>
           <a class="map-node" href="#paper-critic-lean">
             <span>Optimization</span>
@@ -248,8 +251,9 @@
         <div class="direction-list">
           <article class="research-direction">
             <h3>Pretraining &amp; Foundation Models</h3>
-            <p>Hy3, HY2.0, Hunyuan-A13B, Hunyuan-TurboS, Hunyuan-T1, Hunyuan-Large, MAP-Neo, OpenCoder, D-CPT Law, E2-LLM, DDK.</p>
+            <p>Hy4 preview, Hy3, HY2.0, Hunyuan-A13B, Hunyuan-TurboS, Hunyuan-T1, Hunyuan-Large, MAP-Neo, OpenCoder, D-CPT Law, E2-LLM, DDK.</p>
             <div class="representative-links" aria-label="Representative pretraining and foundation model work">
+              <a href="#model-hy4-preview">Hy4 preview</a>
               <a href="#model-hy3-preview">Hy3</a>
               <a href="#model-hy2">HY2.0</a>
               <a href="#model-hunyuan-a13b">A13B</a>
@@ -319,6 +323,10 @@
         </div>
 
         <ol class="news-list">
+          <li>
+            <time datetime="2026-08">08/2026</time>
+            <p>Core contributor to the newly released and open-sourced <a href="#model-hy4-preview"><strong>Hy4 preview</strong></a>, a 770B MoE flagship with 49B active parameters, 1M context, and strong coding, scientific research, and agentic capabilities.</p>
+          </li>
           <li>
             <time datetime="2026-08">08/2026</time>
             <p>Four papers were accepted to EMNLP 2026: <a href="#paper-artifactsbench"><strong>ArtifactsBench</strong></a>, <a href="#paper-webcompass"><strong>WebCompass</strong></a>, and <a href="#paper-mm-browsecomp"><strong>MM-BrowseComp</strong></a> to the Main Conference, and <a href="#paper-jaggedbench"><strong>JaggedBench</strong></a> to Findings.</p>
@@ -409,6 +417,28 @@
           <section class="publication-group" aria-labelledby="models-heading" data-publication-group>
             <h3 id="models-heading">Models &amp; Technical Reports</h3>
             <div class="publication-list">
+              <article class="publication-item highlight" id="model-hy4-preview" data-category="models code rl">
+                <div class="publication-header">
+                  <h4>Hy4 preview</h4>
+                  <span class="venue-badge">Open Model 2026</span>
+                </div>
+                <p class="authors">Tencent Hy Team</p>
+                <p class="paper-note">Open-source 770B-parameter MoE flagship with 49B active parameters and 1M context, delivering frontier-level performance across coding, productivity, scientific research, and complex agentic tasks.</p>
+                <p class="paper-note"><strong>My role:</strong> Core contributor to post-training, reinforcement learning, and agentic capability optimization.</p>
+                <div class="impact-tags" aria-label="Impact tags">
+                  <span>770B MoE</span>
+                  <span>49B active</span>
+                  <span>1M context</span>
+                  <span>Agentic</span>
+                  <span>Apache 2.0</span>
+                </div>
+                <div class="paper-links">
+                  <a href="https://github.com/Tencent-Hunyuan/Hy4-preview" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://huggingface.co/tencent/Hy4-preview" target="_blank" rel="noopener noreferrer">HF</a>
+                  <a href="https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/" target="_blank" rel="noopener noreferrer">Release</a>
+                </div>
+              </article>
+
               <article class="publication-item highlight" id="model-hy3-preview" data-category="models code rl">
                 <div class="publication-header">
                   <h4>Hy3</h4>
