@@ -85,8 +85,8 @@ if (canObserveSections) {
 }
 
 const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
-const publicationItems = Array.from(document.querySelectorAll("[data-category]"));
-const publicationGroups = Array.from(document.querySelectorAll("[data-publication-group]"));
+const publicationItems = Array.from(document.querySelectorAll("#publications [data-category]"));
+const publicationGroups = Array.from(document.querySelectorAll("#publications [data-publication-group]"));
 
 if (filterButtons.length > 0 && publicationItems.length > 0) {
   const setPublicationFilter = (filter) => {
@@ -114,22 +114,34 @@ if (filterButtons.length > 0 && publicationItems.length > 0) {
     });
   });
 
-  // Model and research links must still work when a filter hides their target.
-  const revealLinkedPublication = (hash) => {
+  // Open model details and reset paper filters before navigating to hidden work.
+  const revealLinkedWork = (hash) => {
     const target = document.getElementById(hash.slice(1));
+    let revealed = false;
     if (target?.matches("[data-category].is-hidden")) {
       setPublicationFilter("all");
-      return target;
+      revealed = true;
     }
-    return null;
+    let details = target?.closest("details");
+    while (details) {
+      if (!details.open) {
+        details.open = true;
+        revealed = true;
+      }
+      details = details.parentElement?.closest("details");
+    }
+    return revealed ? target : null;
   };
 
   document.addEventListener("click", (event) => {
     const link = event.target.closest('a[href^="#"]');
-    if (link) revealLinkedPublication(link.hash);
+    if (link) revealLinkedWork(link.hash);
   });
 
   window.addEventListener("hashchange", () => {
-    revealLinkedPublication(window.location.hash)?.scrollIntoView();
+    revealLinkedWork(window.location.hash)?.scrollIntoView();
   });
+
+  const initialTarget = revealLinkedWork(window.location.hash);
+  if (initialTarget) requestAnimationFrame(() => initialTarget.scrollIntoView());
 }
