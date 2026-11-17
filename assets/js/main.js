@@ -113,31 +113,23 @@ if (filterButtons.length > 0 && publicationItems.length > 0) {
       setPublicationFilter(button.dataset.filter || "all");
     });
   });
-}
 
-const revealTargets = Array.from(
-  document.querySelectorAll(
-    ".section-shell, .focus-card, .timeline-item, .map-node, .publication-item"
-  )
-);
-
-if ("IntersectionObserver" in window && revealTargets.length > 0) {
-  revealTargets.forEach((target) => target.classList.add("reveal-on-scroll"));
-
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      rootMargin: "0px 0px -8% 0px",
-      threshold: 0.08,
+  // Model and research links must still work when a filter hides their target.
+  const revealLinkedPublication = (hash) => {
+    const target = document.getElementById(hash.slice(1));
+    if (target?.matches("[data-category].is-hidden")) {
+      setPublicationFilter("all");
+      return target;
     }
-  );
+    return null;
+  };
 
-  revealTargets.forEach((target) => revealObserver.observe(target));
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest('a[href^="#"]');
+    if (link) revealLinkedPublication(link.hash);
+  });
+
+  window.addEventListener("hashchange", () => {
+    revealLinkedPublication(window.location.hash)?.scrollIntoView();
+  });
 }

@@ -64,14 +64,17 @@
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Chenchen Zhang home">CZ</a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#research">Research</a>
         <a href="#models">Models</a>
+        <a href="#research">Research</a>
         <a href="#news">News</a>
         <a href="#publications">Publications</a>
         <a href="#background">Background</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
-        <span class="theme-icon" aria-hidden="true"></span>
+        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path class="theme-moon" d="M20.8 13.1A9 9 0 0 1 10.9 3.2 9 9 0 1 0 20.8 13.1Z" />
+          <g class="theme-sun"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5" /></g>
+        </svg>
       </button>
     </header>
 
@@ -86,11 +89,10 @@
             to <a href="#model-hy4">Hy4</a> and
             <a href="#model-hy4-flash">Hy4 flash</a>, focusing on RL
             post-training and multi-agent capabilities for reasoning, coding,
-            and long-horizon tool use. My earlier contributions span Hy4 preview,
-            Hy3, HY2.0, Hunyuan-A13B, Hunyuan-TurboS, Hunyuan-T1, and Hunyuan-Large.
+            and long-horizon tool use.
           </p>
           <p class="identity-meta">
-            Research focus: RL post-training, agentic RL, multi-agent RL, code/reasoning models, multimodal evaluation, and data-centric model iteration
+            RL post-training · Multi-agent systems · Code &amp; reasoning
           </p>
           <div class="profile-actions" aria-label="Profile links">
             <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=WmzUNaQAAAAJ" target="_blank" rel="noopener noreferrer">
@@ -117,10 +119,68 @@
         </div>
       </section>
 
+      <section class="section-shell compact" id="models">
+        <div class="section-heading">
+          <p class="eyebrow">Hunyuan · Selected models</p>
+          <h2>Advancing reasoning and agents</h2>
+          <p>Core contributions to the Hunyuan family, with a current focus on RL post-training and multi-agent capabilities.</p>
+        </div>
+
+        <div class="featured-models" aria-label="Latest Hunyuan models">
+          <article class="model-feature">
+            <div class="model-meta"><span>Latest generation</span><time datetime="2026-11-04">November 2026</time></div>
+            <h3>Hy4</h3>
+            <p class="model-subtitle">Reasoning, coding &amp; long-horizon agents</p>
+            <p class="model-description">Visual understanding and computer use for complex coding, research, and real-world workflows.</p>
+            <div class="model-links">
+              <a href="#model-hy4">My contribution <span aria-hidden="true">↗</span></a>
+              <a href="https://hy.tencent.ai/research/hy4" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+              <a href="#model-hy4-preview">Earlier preview</a>
+            </div>
+          </article>
+          <article class="model-feature">
+            <div class="model-meta"><span>Efficient intelligence</span><time datetime="2026-11-16">November 2026</time></div>
+            <h3>Hy4 <span class="model-variant">flash</span></h3>
+            <p class="model-subtitle">Multimodal agents for everyday work</p>
+            <p class="model-description">12B active parameters and up to 1M-token context, with RL improving the efficiency of end-to-end tasks.</p>
+            <div class="model-links">
+              <a href="#model-hy4-flash">My contribution <span aria-hidden="true">↗</span></a>
+              <a href="https://hy.tencent.ai/research/hy4-flash" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="model-history" aria-label="Earlier Hunyuan contributions">
+          <article class="model-history-item">
+            <time datetime="2026-07">2026 / July</time>
+            <h3>Hy3</h3>
+            <p>Open-source MoE with stronger reasoning, coding, and agent capabilities.</p>
+            <div class="paper-links"><a href="#model-hy3-preview">Model &amp; contribution</a></div>
+          </article>
+          <article class="model-history-item">
+            <time datetime="2025-12">2025 / December</time>
+            <h3>HY2.0</h3>
+            <p>Post-training for reasoning and instruction following across Think and Instruct.</p>
+            <div class="paper-links"><a href="#model-hy2">Model &amp; contribution</a></div>
+          </article>
+          <article class="model-history-item">
+            <span class="history-period">2024–2025</span>
+            <h3>Earlier Hunyuan models</h3>
+            <p>Foundational work spanning MoE models, reasoning post-training, and adaptive thinking.</p>
+            <div class="paper-links" aria-label="Earlier model details">
+              <a href="#model-hunyuan-large">Large</a>
+              <a href="#model-hunyuan-t1">T1</a>
+              <a href="#model-hunyuan-turbos">TurboS</a>
+              <a href="#model-hunyuan-a13b">A13B</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="section-shell compact current-focus" id="current-focus">
         <div class="section-heading">
           <p class="eyebrow">Current Focus</p>
-          <h2>What I am working on now</h2>
+          <h2>Research focus</h2>
         </div>
         <div class="focus-grid" aria-label="Current research focus">
           <article class="focus-card">
@@ -146,109 +206,14 @@
         </div>
       </section>
 
-      <section class="section-shell compact" id="models">
-        <div class="section-heading">
-          <p class="eyebrow">Hunyuan</p>
-          <h2>Model Family Timeline</h2>
-          <p>
-            A compact view of Hunyuan model releases and technical reports where
-            I have been a core contributor.
-          </p>
-        </div>
-        <div class="model-timeline" aria-label="Hunyuan model family timeline">
-          <article class="timeline-item">
-            <time>11/2024–03/2025</time>
-            <h3>Hunyuan-Large → Hunyuan-T1</h3>
-            <p>Hunyuan-Large established the long-context MoE pre-training and fast-thinking foundation; Hunyuan-T1 extended it with slow-thinking reasoning and code-reasoning post-training.</p>
-            <div class="paper-links">
-              <a href="#model-hunyuan-large">Large details</a>
-              <a href="#model-hunyuan-t1">T1 details</a>
-              <a href="https://arxiv.org/abs/2411.02265" target="_blank" rel="noopener noreferrer">Large report</a>
-              <a href="https://tencent.github.io/llm.hunyuan.T1/README_EN.html" target="_blank" rel="noopener noreferrer">T1 tech page</a>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <time>05-06/2025</time>
-            <h3>Hunyuan-TurboS &amp; A13B</h3>
-            <p>Efficient reasoning releases: adaptive CoT in TurboS and open-source MoE A13B with hybrid reasoning.</p>
-            <div class="paper-links">
-              <a href="#model-hunyuan-turbos">TurboS</a>
-              <a href="#model-hunyuan-a13b">A13B</a>
-              <a href="https://arxiv.org/abs/2505.15431" target="_blank" rel="noopener noreferrer">TurboS arXiv</a>
-              <a href="https://huggingface.co/tencent/Hunyuan-A13B-Instruct" target="_blank" rel="noopener noreferrer">HF</a>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <time>12/2025</time>
-            <h3>HY2.0</h3>
-            <p>Think and Instruct variants for reasoning and instruction-following.</p>
-            <div class="paper-links">
-              <a href="#model-hy2">Details</a>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <time>07/2026</time>
-            <h3>Hy3</h3>
-            <p>Open-source 295B MoE model with 21B active parameters, 256K context, and strong agent capabilities.</p>
-            <div class="paper-links">
-              <a href="#model-hy3-preview">Details</a>
-              <a href="https://github.com/Tencent-Hunyuan/Hy3" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://huggingface.co/tencent/Hy3" target="_blank" rel="noopener noreferrer">HF</a>
-              <a href="https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/" target="_blank" rel="noopener noreferrer">Release</a>
-            </div>
-          </article>
-          <article class="timeline-item featured">
-            <time>08–11/2026</time>
-            <h3>Hy4 &amp; Hy4 flash</h3>
-            <p>From Hy4 preview to multimodal agents and efficient everyday workflows. My focus: RL post-training and multi-agent capabilities.</p>
-            <div class="paper-links">
-              <a href="#model-hy4">Hy4 details</a>
-              <a href="#model-hy4-flash">Flash details</a>
-              <a href="#model-hy4-preview">Preview</a>
-              <a href="https://hy.tencent.ai/research/hy4" target="_blank" rel="noopener noreferrer">Hy4 project</a>
-              <a href="https://hy.tencent.ai/research/hy4-flash" target="_blank" rel="noopener noreferrer">Flash project</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
       <section class="section-shell compact" id="research">
         <div class="section-heading">
           <p class="eyebrow">Research</p>
           <h2>Research Directions</h2>
           <p>
-            I am currently working on foundation models, especially code/reasoning
-            models, reinforcement learning, agentic RL, multi-agent RL, math and STEM reasoning,
-            code intelligence, multimodal systems, and evaluation.
+            From foundation models to coordinated agents: training methods,
+            code intelligence, and the evaluations that guide model improvement.
           </p>
-        </div>
-
-        <div class="research-map" aria-label="Research map">
-          <a class="map-node map-node-primary" href="#models">
-            <span>Foundation</span>
-            <strong>Hunyuan Models</strong>
-            <em>Hy4 · Hy4 flash · Hy3 · HY2.0 · A13B · T1 · TurboS · Large</em>
-          </a>
-          <a class="map-node" href="#paper-critic-lean">
-            <span>Optimization</span>
-            <strong>Math / STEM RL</strong>
-            <em>CriticLean · ConceptMath · RLPT</em>
-          </a>
-          <a class="map-node" href="#paper-relook">
-            <span>Agents</span>
-            <strong>Agentic &amp; Multi-Agent RL</strong>
-            <em>ReLook · Orchestration Traces · Credit Assignment</em>
-          </a>
-          <a class="map-node" href="#paper-swe-compass">
-            <span>Code</span>
-            <strong>Code Intelligence</strong>
-            <em>SWE-Compass · NL2Repo · OpenCoder</em>
-          </a>
-          <a class="map-node" href="#paper-omnivideobench">
-            <span>Evaluation</span>
-            <strong>Multimodal &amp; Tool Use</strong>
-            <em>MM-BrowseComp · OmniVideoBench · ArtifactsBench</em>
-          </a>
         </div>
 
         <div class="direction-list">
