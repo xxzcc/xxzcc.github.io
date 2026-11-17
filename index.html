@@ -433,8 +433,8 @@
                   <h4>Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces</h4>
                   <span class="venue-badge">arXiv 2026</span>
                 </div>
-                <p class="authors"><strong>Chenchen Zhang</strong> <span class="authorship-note">Single author</span></p>
-                <p class="paper-note">Studies how agent teams divide work, communicate, combine results, and decide when to stop, organizing these coordination decisions through orchestration traces.</p>
+                <p class="authors"><strong>Chenchen Zhang</strong> <span class="authorship-note">Single author · Survey &amp; orchestration framework</span></p>
+                <p class="paper-note">Develops an orchestration-trace framework for studying how RL can train teams of LLM agents to spawn, delegate, communicate, aggregate results, and stop. Connects reward design with credit assignment across these decisions, identifies gaps in message-level credit and learned stopping, and releases a tagged literature corpus and a replayable trace schema.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>Multi-agent RL</span>
                   <span>Orchestration traces</span>
@@ -451,8 +451,8 @@
                   <h4>From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models</h4>
                   <span class="venue-badge">arXiv 2026</span>
                 </div>
-                <p class="authors"><strong>Chenchen Zhang</strong> <span class="authorship-note">Single author</span></p>
-                <p class="paper-note">Examines which reasoning steps, tool calls, and agent interactions contribute to an outcome, with a survey and analytical framework for identifying and evaluating credit assignment.</p>
+                <p class="authors"><strong>Chenchen Zhang</strong> <span class="authorship-note">Single author · Survey &amp; credit-assignment analysis</span></p>
+                <p class="paper-note">Unifies credit assignment across reasoning steps, tool calls, memory operations, and interacting agents. Combines a literature taxonomy with six diagnostics for identifying when credit estimates are meaningful, analyzes the limits of text-only histories, and introduces a CA-ID Card linking causal claims to evidence and falsification tests.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>Survey</span>
                   <span>Agentic RL</span>
@@ -469,14 +469,15 @@
                   <h4>ReLook: Vision-Grounded RL with a Multimodal LLM Critic for Agentic Web Coding</h4>
                   <span class="venue-badge">ACL 2026</span>
                 </div>
-                <p class="authors">Yuhang Li*, <strong>Chenchen Zhang*</strong>, Ruilin Lv, Ao Liu, Ken Deng, et al.</p>
-                <p class="paper-note"><strong>* Equal contribution.</strong> <strong>My role:</strong> Designed agentic RL evaluation and multimodal critic loops for web coding.</p>
+                <p class="authors">Yuhang Li, <strong>Chenchen Zhang</strong>, Ruilin Lv, Ao Liu, Ken Deng, Yuanxing Zhang, Jiaheng Liu, Bo Zhou <span class="authorship-note">Co-first author</span></p>
+                <p class="paper-note">Introduces a vision-grounded RL framework that trains web-coding agents to generate, visually diagnose, and refine interfaces using a multimodal critic. Render-validity rewards and an improvement-only revision rule stabilize learning; a critic-free self-edit cycle retains most of the gains at inference without repeated critic calls.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>ACL 2026</span>
                   <span>Agentic RL</span>
                   <span>Multimodal critic</span>
                 </div>
                 <div class="paper-links">
+                  <a href="https://aclanthology.org/2026.acl-long.1167/" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://arxiv.org/abs/2510.11498" target="_blank" rel="noopener noreferrer">Paper</a>
                 </div>
               </article>
@@ -486,13 +487,19 @@
                   <h4>SWE-Compass: Towards Unified Evaluation of Agentic Coding Abilities for Large Language Models</h4>
                   <span class="venue-badge">ICML 2026</span>
                 </div>
-                <p class="authors">Jingxuan Xu*, Ken Deng, Weihao Li, Songwei Yu, Yanan Wu, <strong>Chenchen Zhang*</strong>, et al.</p>
-                <p class="paper-note"><strong>* Equal contribution.</strong> <strong>My role:</strong> Built unified evaluation for agentic coding abilities and code-agent capability analysis.</p>
+                <p class="authors">Jingxuan Xu, Ken Deng, Weihao Li, …, <strong>Chenchen Zhang</strong>, et al. <span class="authorship-note">Co-first author</span></p>
+                <details class="author-details">
+                  <summary>All 38 authors</summary>
+                  <p class="authors">Jingxuan Xu, Ken Deng, Weihao Li, Songwei Yu, Haoyang Huang, Xinping Lei, Yifan Yao, Huaixi Tang, Zhiyi Lai, Kepeng Lei, Zizheng Zhan, Yanan Wu, <strong>Chenchen Zhang</strong>, Wenqiang Zhu, Wen Xiang, Zongxian Feng, Han Li, Junqi Xiong, Dailin Li, Zuchen Gao, Kun Wu, Yuanxing Zhang, Wuxuan Gong, Ziyuan Gao, Guanxiang Wang, Yirong Xue, Mengfei Xie, Xiaojiang Zhang, Jinghui Wang, Wenhao Zhuang, Zheng Lin, Huiming Wang, Zhaoxiang Zhang, Yuqun Zhang, Haotian Zhang, Ming Sun, Chen Bin, Jiaheng Liu</p>
+                </details>
+                <p class="paper-note">Builds a unified benchmark of 2,000 real pull-request tasks spanning eight task types, eight programming scenarios, and ten languages. Evaluations with SWE-Agent and Claude Code expose distinct weaknesses across tasks and languages, connecting agentic coding assessment to the breadth of real developer workflows.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>ICML 2026</span>
                   <span>Agentic coding</span>
                 </div>
                 <div class="paper-links">
+                  <a href="https://proceedings.mlr.press/v306/xu26k.html" target="_blank" rel="noopener noreferrer">Proceedings</a>
+                  <a href="https://github.com/kwaipilot/SWE-Compass" target="_blank" rel="noopener noreferrer">Code</a>
                   <a href="https://arxiv.org/abs/2511.05459" target="_blank" rel="noopener noreferrer">Paper</a>
                 </div>
               </article>
@@ -502,14 +509,19 @@
                   <h4>ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation</h4>
                   <span class="venue-badge">EMNLP 2026</span>
                 </div>
-                <p class="authors"><strong>Chenchen Zhang</strong>, Yuhang Li, Can Xu, Jiaheng Liu, Ao Liu, et al.</p>
-                <p class="paper-note">Automated multimodal evaluation for interactive visual artifacts.</p>
-                <p class="paper-note"><strong>My role:</strong> First author; built visual-interactive code evaluation for artifact generation.</p>
+                <p class="authors"><strong>Chenchen Zhang</strong>, Yuhang Li, Jiaheng Liu, et al. <span class="authorship-note">First author</span></p>
+                <details class="author-details">
+                  <summary>All 20 authors</summary>
+                  <p class="authors"><strong>Chenchen Zhang</strong>, Yuhang Li, Jiaheng Liu, Can Xu, Ao Liu, Changzhi Zhou, Ken Deng, Dengpeng Wu, Guanhua Huang, Kejiao Li, Qi Yi, Ruilin Lv, Shihui Hu, Yue Zhang, Yuhao Jiang, Zenan Xu, Yuanxing Zhang, Wiggin Zhou, Bo Zhou, Fengzong Lian</p>
+                </details>
+                <p class="paper-note">Introduces automated evaluation of executable visual artifacts using screenshots captured before, during, and after interaction, together with code and task-specific checklists. Across 1,825 tasks in nine domains, the framework measures visual quality and behavior; an expert study reports 90.95% pairwise agreement between the multimodal referee and human judgments.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>Code evaluation</span>
                   <span>Multimodal</span>
                 </div>
                 <div class="paper-links">
+                  <a href="https://aclanthology.org/2026.emnlp-main.2229/" target="_blank" rel="noopener noreferrer">Proceedings</a>
+                  <a href="https://artifactsbenchmark.github.io/" target="_blank" rel="noopener noreferrer">Project</a>
                   <a href="https://arxiv.org/abs/2507.04952" target="_blank" rel="noopener noreferrer">Paper</a>
                   <a href="https://github.com/Tencent-Hunyuan/ArtifactsBenchmark" target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
@@ -520,13 +532,18 @@
                   <h4>WebCompass: Evaluating Multimodal Code Agents in Web Development from Vision, Instruction, and Interaction to Implementation</h4>
                   <span class="venue-badge">EMNLP 2026</span>
                 </div>
-                <p class="authors">Xinping Lei*, Xinyu Che, Junqi Xiong, <strong>Chenchen Zhang*</strong>, Yukai Huang, Chenyu Zhou, et al.</p>
-                <p class="paper-note"><strong>* Equal contribution.</strong> <strong>My role:</strong> Built multimodal web-coding evaluation and analysis for stronger code and agentic capabilities.</p>
+                <p class="authors">Xinping Lei, Xinyu Che, Junqi Xiong, <strong>Chenchen Zhang</strong>, et al. <span class="authorship-note">Co-first author</span></p>
+                <details class="author-details">
+                  <summary>All 17 authors</summary>
+                  <p class="authors">Xinping Lei, Xinyu Che, Junqi Xiong, <strong>Chenchen Zhang</strong>, Yukai Huang, Chenyu Zhou, Haoyang Huang, Minghao Liu, Letian Zhu, Hongyi Ye, Ken Deng, Zizheng Zhan, Han Li, Yifan Yao, Ming Sun, Zhaoxiang Zhang, Jiaheng Liu</p>
+                </details>
+                <p class="paper-note">Evaluates web agents across generation, editing, and repair from text, images, and video. Combines checklist-based patch assessment with an Agent-as-a-Judge that runs websites in a browser and creates targeted tests, revealing gaps in visual quality, interaction, and codebase-level reasoning that static code metrics miss.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>Web coding</span>
                   <span>Multimodal eval</span>
                 </div>
                 <div class="paper-links">
+                  <a href="https://aclanthology.org/2026.emnlp-main.1669/" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://arxiv.org/abs/2604.18224" target="_blank" rel="noopener noreferrer">Paper</a>
                 </div>
               </article>
@@ -536,8 +553,12 @@
                   <h4>CodeCriticBench: A Holistic Code Critique Benchmark for Large Language Models</h4>
                   <span class="venue-badge">arXiv 2025</span>
                 </div>
-                <p class="authors"><strong>Chenchen Zhang</strong>, Marcus Dong, Jiaheng Liu, Wei Zhang, Yejie Wang, et al.</p>
-                <p class="paper-note"><strong>My role:</strong> First author; built holistic critique evaluation for code LLMs and critic-model analysis.</p>
+                <p class="authors"><strong>Chenchen Zhang</strong>, Marcus Dong, Jiaheng Liu, et al. <span class="authorship-note">First author</span></p>
+                <details class="author-details">
+                  <summary>All 18 authors</summary>
+                  <p class="authors"><strong>Chenchen Zhang</strong>, Marcus Dong, Jiaheng Liu, Wei Zhang, Yejie Wang, Jian Yang, Ge Zhang, Tianyu Liu, Zhongyuan Peng, Yingshui Tan, Yuanxing Zhang, Zhexu Wang, Weixun Wang, Yancheng He, Ken Deng, Wangchunshu Zhou, Wenhao Huang, Zhaoxiang Zhang</p>
+                </details>
+                <p class="paper-note">Introduces a code-critique benchmark covering both code generation and code question answering across difficulty levels. Basic and advanced protocols, including fine-grained checklists, assess the quality of model critiques and constructive feedback, extending evaluation beyond whether a model can generate a correct solution.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>Code critique</span>
                   <span>Benchmark</span>
@@ -559,8 +580,14 @@
                   <h4>NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents</h4>
                   <span class="venue-badge">ICML 2026</span>
                 </div>
-                <p class="authors">Jingzhe Ding, Shengda Long, Changxin Pu, Huan Zhou, Daoguang Zan, <strong>Chenchen Zhang</strong>, et al.</p>
+                <p class="authors">Jingzhe Ding, Shengda Long, Changxin Pu, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 50 authors</summary>
+                  <p class="authors">Jingzhe Ding, Shengda Long, Changxin Pu, Ge Zhang, Zhou Huan, Hongwan Gao, Xiang Gao, Chao He, Yue Hou, Fei Hu, Zhaojian Li, Weiran Shi, Zaiyuan Wang, Daoguang Zan, <strong>Chenchen Zhang</strong>, Xiaoxu Zhang, Chen Qizhi, Xianfu Cheng, Bo Deng, Qingshui Gu, Kai Hua, Juntao Lin, Pai Liu, Mingchen Li, Minghao Li, Xuanguang Pan, Zifan Peng, Yujia Qin, Yong Shan, Zhewen Tan, Haoran Wang, Zihan Wang, Weihao Xie, Yishuo Yuan, Jiayu Zhang, Yunfei Zhao, He Zhu, Liya Zhu, Chenyang Zou, Ming Ding, Jianpeng Jiao, Jiaheng Liu, Minghao Liu, Qian Liu, Chongyang Tao, Jian Yang, Tong Yang, Zhaoxiang Zhang, Xinjie Chen, Wenhao Huang</p>
+                </details>
+                <p class="paper-note">Tests whether coding agents can turn a requirements document and an empty workspace into an installable Python library. Execution-based evaluation exposes premature stopping, inconsistent planning, and fragile cross-file dependencies over long development trajectories.</p>
                 <div class="paper-links">
+                  <a href="https://proceedings.mlr.press/v306/ding26j.html" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://arxiv.org/abs/2512.12730" target="_blank" rel="noopener noreferrer">Paper</a>
                   <a href="https://github.com/multimodal-art-projection/NL2RepoBench" target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
@@ -571,8 +598,14 @@
                   <h4>From Diagrams to Code: Multilingual Programming with Visual Design</h4>
                   <span class="venue-badge">ICML 2026</span>
                 </div>
-                <p class="authors">Linzheng Chai, Jian Yang, Shukai Liu, Wei Zhang, Liran Wang, <strong>Chenchen Zhang</strong>, et al.</p>
+                <p class="authors">Linzheng Chai, Jian Yang, Shukai Liu, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 15 authors</summary>
+                  <p class="authors">Linzheng Chai, Jian Yang, Shukai Liu, Wei Zhang, Liran Wang, Ke Jin, Tao Sun, Congnan Liu, <strong>Chenchen Zhang</strong>, Hualei Zhu, Jiaheng Liu, Xianjie Wu, Ge Zhang, Tianyu Liu, Zhoujun Li</p>
+                </details>
+                <p class="paper-note">Combines a 13.1M-sample multilingual multimodal instruction dataset, a trained code model, and a dedicated benchmark to translate visual designs into programs. The resulting 7B model matches much larger models on the reported evaluation.</p>
                 <div class="paper-links">
+                  <a href="https://proceedings.mlr.press/v306/chai26b.html" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://arxiv.org/abs/2507.08719" target="_blank" rel="noopener noreferrer">Paper</a>
                   <a href="https://github.com/MCEVAL/MMCoder" target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
@@ -583,8 +616,12 @@
                   <h4>Workflow-GYM: Towards Long-Horizon Evaluation of Computer-use Agentic tasks in Real-World Professional Fields</h4>
                   <span class="venue-badge">arXiv 2026</span>
                 </div>
-                <p class="authors">Liya Zhu, Jingzhe Ding, Jian Zhang, Jianbo Xue, Shihao Liang, et al., including <strong>Chenchen Zhang</strong></p>
-                <p class="paper-note">Long-horizon evaluation of computer-use agents across professional workflows and specialized software.</p>
+                <p class="authors">Liya Zhu, Jingzhe Ding, Jian Zhang, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 66 authors</summary>
+                  <p class="authors">Liya Zhu, Jingzhe Ding, Jian Zhang, Jianbo Xue, Shihao Liang, Ge Zhang, Yi Zhu, Duju Zeng, Xiang Gao, Qingshui Gu, Mailun Gao, Huimin Che, Yan Zhao, Peiheng Zhou, Haojun Wang, Chaobo Xian, Lili Le, Chi Wu, Yiwei Liu, Shengda Long, Jiale Yang, Fangzhi Xu, Sijin Wu, Haodong Duan, Chao He, Zhaojian Li, Minchao Wang, Huan Zhou, Jiani Hou, Chuqian Yu, Weiran Shi, Hongwan Gao, Jiamin Chen, Guanhong Chen, Tingqin Luo, Kaiyuan Zhang, Zhixin Yao, Qing Hua, Yuhao Jiang, Jin Chen, Pu Chen, Zhenyu Hu, Xingyu Li, Zhengxuan Jiang, Meng Cao, Tianfeng Long, Haozhe Wang, Mingzhang Wang, Yichen Zhang, Yiming Dai, <strong>Chenchen Zhang</strong>, Jiaying Wang, Xinying Liu, Xingzu Liu, Lingling Zhang, Xinjie Chen, Yujia Qin, Wangchunshu Zhou, Zhiyong Wu, Yang Liu, Jiaheng Liu, Lei Zhang, Shen Yan, Wenhao Huang, Zaiyuan Wang, Xiaolong Chang</p>
+                </details>
+                <p class="paper-note">Evaluates long-horizon GUI agents in specialized professional software. Diagnoses omitted workflow stages, cascading errors, and goal drift, showing why success on short, general-purpose computer tasks does not establish competence on complete professional workflows.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>GUI agents</span>
                   <span>Long-horizon evaluation</span>
@@ -600,7 +637,12 @@
                   <h4>AutoCodeBench: Large Language Models are Automatic Code Benchmark Generators</h4>
                   <span class="venue-badge">ICLR 2026</span>
                 </div>
-                <p class="authors">Jason Chou, Ao Liu, Yuchi Deng, Zhiying Zeng, Tao Zhang, Yue Mao, <strong>Chenchen Zhang</strong>, et al.</p>
+                <p class="authors">Jason Chou, Ao Liu, Yuchi Deng, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 16 authors</summary>
+                  <p class="authors">Jason Chou, Ao Liu, Yuchi Deng, Zhiying Zeng, Tao Zhang, Haotian Zhu, Jianwei Cai, Yue Mao, <strong>Chenchen Zhang</strong>, Lingyun Tan, Ziyan Xu, Bohui Zhai, Hengyi Liu, Speed Zhu, Wiggin Zhou, Fengzong Lian</p>
+                </details>
+                <p class="paper-note">Introduces AutoCodeGen, a pipeline that combines LLM-generated inputs, sandbox execution, reverse problem generation, and filtering to construct challenging coding tasks. Releases a benchmark with balanced coverage of 20 languages, alongside verifiable training data and a multilingual sandbox.</p>
                 <div class="paper-links">
                   <a href="https://openreview.net/forum?id=fN0MED2Idq" target="_blank" rel="noopener noreferrer">Paper</a>
                   <a href="https://autocodebench.github.io/" target="_blank" rel="noopener noreferrer">Project</a>
@@ -612,13 +654,19 @@
                   <h4>OpenCoder: The Open Cookbook for Top-Tier Code Large Language Models</h4>
                   <span class="venue-badge">ACL 2025</span>
                 </div>
-                <p class="authors">Siming Huang, Tianhao Cheng, Jason Klein Liu, Jiaran Hao, Liuyihan Song, Yang Xu, J. Yang, J. H. Liu, <strong>Chenchen Zhang</strong>, et al.</p>
+                <p class="authors">Siming Huang, Tianhao Cheng, Jason Klein Liu, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 26 authors</summary>
+                  <p class="authors">Siming Huang, Tianhao Cheng, Jason Klein Liu, Weidi Xu, Jiaran Hao, Liuyihan Song, Yang Xu, Jian Yang, Jiaheng Liu, <strong>Chenchen Zhang</strong>, Linzheng Chai, Ruifeng Yuan, Xianzhen Luo, Qiufeng Wang, Yuantao Fan, Qingfu Zhu, Zhaoxiang Zhang, Yang Gao, Jie Fu, Qian Liu, Houyi Li, Ge Zhang, Yuan Qi, Xu Yinghui, Wei Chu, Zili Wang</p>
+                </details>
+                <p class="paper-note">Releases an open code-model training recipe with model weights, reproducible data pipelines, training protocols, and ablations. Identifies the roles of cleaning, deduplication, code-related text, and synthetic data in building competitive code LLMs.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>ACL 2025</span>
                   <span>Open-source</span>
                   <span>Code LLM</span>
                 </div>
                 <div class="paper-links">
+                  <a href="https://aclanthology.org/2025.acl-long.1591/" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://arxiv.org/abs/2411.04905" target="_blank" rel="noopener noreferrer">Paper</a>
                   <a href="https://github.com/OpenCoder-llm/OpenCoder-llm" target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
@@ -635,12 +683,18 @@
                   <h4>CriticLean: Critic-Guided Reinforcement Learning for Mathematical Formalization</h4>
                   <span class="venue-badge">ACL 2026</span>
                 </div>
-                <p class="authors">Zhongyuan Peng, Yifan Yao, Kaijing Ma, Shuyue Guo, Yizhe Li, <strong>Chenchen Zhang</strong>, et al.</p>
+                <p class="authors">Zhongyuan Peng, Yifan Yao, Kaijing Ma, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 19 authors</summary>
+                  <p class="authors">Zhongyuan Peng, Yifan Yao, Kaijing Ma, Shuyue Guo, Yizhe Li, Yichi Zhang, <strong>Chenchen Zhang</strong>, Yifan Zhang, Zhouliang Yu, Luming Li, Minghao Liu, Yihang Xia, Jiawei Shen, Yuchen Wu, Yixin Cao, Zhaoxiang Zhang, Wenhao Huang, Jiaheng Liu, Ge Zhang</p>
+                </details>
+                <p class="paper-note">Trains a critic to judge whether Lean 4 formalizations preserve the meaning of natural-language mathematics. Combines critic-guided RL, a semantic-fidelity benchmark, and a corpus of over 509K problems to improve reliability beyond compilation success.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>ACL 2026</span>
                   <span>Math formalization</span>
                 </div>
                 <div class="paper-links">
+                  <a href="https://aclanthology.org/2026.acl-long.139/" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://arxiv.org/abs/2507.06181" target="_blank" rel="noopener noreferrer">Paper</a>
                 </div>
               </article>
@@ -650,12 +704,18 @@
                   <h4>Reinforcement Learning on Pre-Training Data</h4>
                   <span class="venue-badge">ACL 2026 · SAC Highlight</span>
                 </div>
-                <p class="authors">Siheng Li, Kejiao Li, Zenan Xu, Guanhua Huang, Zihao Zheng, <strong>Chenchen Zhang</strong>, et al.</p>
+                <p class="authors">Siheng Li, Kejiao Li, Zenan Xu, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 34 authors</summary>
+                  <p class="authors">Siheng Li, Kejiao Li, Zenan Xu, Guanhua Huang, Kun Li, Haoyuan Wu, Wujiajia, Zihao Zheng, <strong>Chenchen Zhang</strong>, Kun Shi, Xue Gong, Qi Yi, Ruibin Xiong, Tingqiang Xu, Yuhao Jiang, Jianfeng Yan, Yuyuan Zeng, Guanghui Xu, Jinbao Xue, Zhijiang Xu, Zheng Fang, Shuai Li, Qibin Liu, Xiaoxue Li, Zhuoyu Li, Yangyu Tao, Fei Gao, Cheng Jiang, Bochao Wang, Kai Liu, Jianchen Zhu, Wai Lam, Bo Zhou, Di Wang</p>
+                </details>
+                <p class="paper-note">Derives RL rewards directly from general text through a next-segment reasoning objective, reducing dependence on manually annotated post-training tasks. Demonstrates gains in continual pre-training and a stronger starting point for subsequent RL post-training.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>SAC Highlight Paper</span>
                   <span>RLPT</span>
                 </div>
                 <div class="paper-links">
+                  <a href="https://aclanthology.org/2026.acl-long.506/" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://arxiv.org/abs/2509.19249" target="_blank" rel="noopener noreferrer">Paper</a>
                   <a href="https://openreview.net/forum?id=bGNxj19loZ" target="_blank" rel="noopener noreferrer">OpenReview</a>
                   <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=WmzUNaQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=WmzUNaQAAAAJ:dhFuZR0502QC" target="_blank" rel="noopener noreferrer">Scholar</a>
@@ -665,14 +725,20 @@
               <article class="publication-item" id="paper-rhombus" data-category="rl models">
                 <div class="publication-header">
                   <h4>Rhombus: Incentivizing Coordination in Parallel Thinking through Reinforcement Learning</h4>
-                  <span class="venue-badge">ACL 2026</span>
+                  <span class="venue-badge">ACL 2026 · Findings</span>
                 </div>
-                <p class="authors">Including <strong>Chenchen Zhang</strong> et al.</p>
+                <p class="authors">Ziyuan Nan, Qi Yi, Di Huang, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 12 authors</summary>
+                  <p class="authors">Ziyuan Nan, Qi Yi, Di Huang, Yutong Wu, Guanhua Huang, Xue Gong, Kejiao Li, Yuhao Jiang, <strong>Chenchen Zhang</strong>, Zenan Xu, Xing Hu, Bo Zhou</p>
+                </details>
+                <p class="paper-note">Co-trains parallel reasoning proposers and a central synthesizer under a shared RL reward, explicitly optimizing the information they exchange. On mathematical reasoning benchmarks, the method improves accuracy while reducing latency under matched token budgets.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>ACL 2026</span>
                   <span>Parallel thinking</span>
                 </div>
                 <div class="paper-links">
+                  <a href="https://aclanthology.org/2026.findings-acl.1956/" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://openreview.net/forum?id=gUTrZ4l9NZ" target="_blank" rel="noopener noreferrer">OpenReview</a>
                 </div>
               </article>
@@ -689,6 +755,11 @@
                   <span class="venue-badge">arXiv 2024</span>
                 </div>
                 <p class="authors">Ge Zhang, Scott Qu, Jiaheng Liu, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 45 authors</summary>
+                  <p class="authors">Ge Zhang, Scott Qu, Jiaheng Liu, <strong>Chenchen Zhang</strong>, Chenghua Lin, Chou Leuang Yu, Danny Pan, Esther Cheng, Jie Liu, Qunshu Lin, Raven Yuan, Tuney Zheng, Wei Pang, Xinrun Du, Yiming Liang, Yinghao Ma, Yizhi Li, Ziyang Ma, Bill Lin, Emmanouil Benetos, Huan Yang, Junting Zhou, Kaijing Ma, Minghao Liu, Morry Niu, Noah Wang, Quehry Que, Ruibo Liu, Sine Liu, Shawn Guo, Soren Gao, Wangchunshu Zhou, Xinyue Zhang, Yizhi Zhou, Yubo Wang, Yuelin Bai, Yuhan Zhang, Yuxiang Zhang, Zenith Wang, Zhenzhu Yang, Zijian Zhao, Jiajun Zhang, Wanli Ouyang, Wenhao Huang, Wenhu Chen</p>
+                </details>
+                <p class="paper-note">Releases a bilingual 7B model trained on 4.5T tokens together with the cleaned corpus, data pipeline, checkpoints, and training infrastructure. Makes the full model-building process available for reproducible research in language, reasoning, and code.</p>
                 <div class="paper-links">
                   <a href="https://arxiv.org/abs/2405.19327" target="_blank" rel="noopener noreferrer">Paper</a>
                   <a href="https://github.com/multimodal-art-projection/MAP-NEO" target="_blank" rel="noopener noreferrer">Code</a>
@@ -700,13 +771,18 @@
                   <h4>DDK: Distilling Domain Knowledge for Efficient Large Language Models</h4>
                   <span class="venue-badge">NeurIPS 2024</span>
                 </div>
-                <p class="authors">Jiaheng Liu*, <strong>Chenchen Zhang*</strong>, Jinyang Guo, Yuanxing Zhang, et al.</p>
-                <p class="paper-note"><strong>* Equal contribution.</strong> <strong>My role:</strong> Co-first author.</p>
+                <p class="authors">Jiaheng Liu, <strong>Chenchen Zhang</strong>, Jinyang Guo, et al. <span class="authorship-note">Co-first author</span></p>
+                <details class="author-details">
+                  <summary>All 16 authors</summary>
+                  <p class="authors">Jiaheng Liu, <strong>Chenchen Zhang</strong>, Jinyang Guo, Yuanxing Zhang, Haoran Que, Ken Deng, Zhiqi Bai, Jie Liu, Ge Zhang, Jiakai Wang, Yanan Wu, Congnan Liu, Jiamang Wang, Lin Qu, Wenbo Su, Bo Zheng</p>
+                </details>
+                <p class="paper-note">Introduces domain-aware knowledge distillation that smoothly adapts the training-data mixture to performance gaps between teacher and student models. Directs learning toward domains where the student needs more help, improving transfer over fixed-mixture distillation and continued pre-training baselines.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>NeurIPS 2024</span>
                   <span>Efficient LLMs</span>
                 </div>
                 <div class="paper-links">
+                  <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/b206d54ffbb803b5c51d85f405d422e4-Abstract.html" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://arxiv.org/abs/2407.16154" target="_blank" rel="noopener noreferrer">Paper</a>
                 </div>
               </article>
@@ -717,7 +793,12 @@
                   <span class="venue-badge">NeurIPS 2024</span>
                 </div>
                 <p class="authors">Haoran Que, Jiaheng Liu, Ge Zhang, <strong>Chenchen Zhang</strong>, et al.</p>
-                <p class="paper-note"><strong>My role:</strong> Core author; wrote most of the underlying codebase for domain-specific continual pre-training and scaling-law experiments.</p>
+                <details class="author-details">
+                  <summary>All 16 authors</summary>
+                  <p class="authors">Haoran Que, Jiaheng Liu, Ge Zhang, <strong>Chenchen Zhang</strong>, Xingwei Qu, Yinghao Ma, Feiyu Duan, Zhiqi Bai, Jiakai Wang, Yuanxing Zhang, Xu Tan, Jie Fu, Jiamang Wang, Lin Qu, Wenbo Su, Bo Zheng</p>
+                </details>
+                <p class="paper-note">Models how domain-specific continual pre-training performance changes with data mixture, model size, and training volume. Uses small-scale experiments to select mixtures and transfer scaling predictions across domains, reducing the cost of exhaustive training searches.</p>
+                <p class="paper-note"><strong>My contribution:</strong> Core author; wrote most of the underlying codebase for domain-specific continual pre-training and scaling-law experiments.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>NeurIPS 2024</span>
                   <span>Core author</span>
@@ -731,10 +812,16 @@
               <article class="publication-item" id="paper-e2-llm" data-category="models">
                 <div class="publication-header">
                   <h4>E2-LLM: Efficient and Extreme Length Extension of Large Language Models</h4>
-                  <span class="venue-badge">ACL 2024</span>
+                  <span class="venue-badge">ACL 2024 · Findings</span>
                 </div>
                 <p class="authors">Jiaheng Liu, Zhiqi Bai, Yuanxing Zhang, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 14 authors</summary>
+                  <p class="authors">Jiaheng Liu, Zhiqi Bai, Yuanxing Zhang, <strong>Chenchen Zhang</strong>, Yu Zhang, Ge Zhang, Jiakai Wang, Haoran Que, Yukang Chen, Wenbo Su, Tiezheng Ge, Jie Fu, Wenhu Chen, Bo Zheng</p>
+                </details>
+                <p class="paper-note">Extends usable context lengths through a single training run on short sequences. Scale and position augmentations of rotary embeddings improve robustness to longer contexts, avoiding the need to collect long-context training data for each target window.</p>
                 <div class="paper-links">
+                  <a href="https://aclanthology.org/2024.findings-acl.252/" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://arxiv.org/abs/2401.06951" target="_blank" rel="noopener noreferrer">Paper</a>
                 </div>
               </article>
@@ -749,14 +836,19 @@
                   <h4>MM-BrowseComp: A Comprehensive Benchmark for Multimodal Browsing Agents</h4>
                   <span class="venue-badge">EMNLP 2026</span>
                 </div>
-                <p class="authors">Shilong Li, Xingyuan Bu, Wenjie Wang, Jiaheng Liu, Jun Dong, et al., including <strong>Chenchen Zhang</strong></p>
-                <p class="paper-note">A benchmark for multimodal retrieval and reasoning over text, images, and videos during web browsing.</p>
+                <p class="authors">Shilong Li, Xingyuan Bu, Wenjie Wang, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 25 authors</summary>
+                  <p class="authors">Shilong Li, Xingyuan Bu, Wenjie Wang, Jiaheng Liu, Jun Dong, Haoyang He, Hao Lu, Haozhe Zhang, Chenchen Jing, Zhen Li, Chuanhao Li, Jiayi Tian, <strong>Chenchen Zhang</strong>, Tianhao Peng, Yancheng He, Jihao Gu, Hui Huang, Donghao Zhou, Yuanxing Zhang, Jian Yang, Ge Zhang, Wenhao Huang, Zhaoxiang Zhang, Qiangpeng Yang, Shilei Wen</p>
+                </details>
+                <p class="paper-note">Introduces 400 questions requiring agents to retrieve and combine evidence from web text, images, and video. Verified evidence checklists support analysis of multimodal dependencies and reasoning paths, exposing limitations hidden by text-only browsing evaluations.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>Multimodal agents</span>
                   <span>Browsing benchmark</span>
                   <span>Evaluation</span>
                 </div>
                 <div class="paper-links">
+                  <a href="https://aclanthology.org/2026.emnlp-main.1169/" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://arxiv.org/abs/2508.13186" target="_blank" rel="noopener noreferrer">Paper</a>
                 </div>
               </article>
@@ -764,14 +856,22 @@
               <article class="publication-item" id="paper-jaggedbench" data-category="evaluation">
                 <div class="publication-header">
                   <h4>JaggedBench: Measuring Reasoning Invariance via Automated Weakness Exploration</h4>
-                  <span class="venue-badge">EMNLP 2026 Findings</span>
+                  <span class="venue-badge">EMNLP 2026 · Findings</span>
                 </div>
-                <p class="authors">Donghao Luo, <strong>Chenchen Zhang</strong>, Siheng Li, Zenan Xu, et al.</p>
-                <p class="paper-note">A benchmark for measuring reasoning invariance through automated weakness exploration.</p>
+                <p class="authors">Donghao Luo, <strong>Chenchen Zhang</strong>, Siheng Li, et al. <span class="authorship-note">Co-first author</span></p>
+                <details class="author-details">
+                  <summary>All 11 authors</summary>
+                  <p class="authors">Donghao Luo, <strong>Chenchen Zhang</strong>, Siheng Li, Zenan Xu, Qi Yi, Boyuqiu, Weikang Wang, Guanhua Huang, Tao Yang, Bo Zhou, Alex Chan</p>
+                </details>
+                <p class="paper-note">Introduces Automated Weakness Exploration to generate and verify variations near a model’s apparent capability boundary. Evaluates 24 models on 1,142 variants and identifies 18 recurring failure modes, showing how strong aggregate scores can mask brittle reasoning across mathematics, code, science, and knowledge.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>Reasoning evaluation</span>
                   <span>Robustness</span>
                   <span>Benchmark</span>
+                </div>
+                <div class="paper-links">
+                  <a href="https://aclanthology.org/2026.findings-emnlp.1145/" target="_blank" rel="noopener noreferrer">Proceedings</a>
+                  <a href="https://jaggedbench.github.io/" target="_blank" rel="noopener noreferrer">Project</a>
                 </div>
               </article>
 
@@ -780,8 +880,14 @@
                   <h4>OmniVideoBench: Towards Audio-Visual Understanding Evaluation for Omni MLLMs</h4>
                   <span class="venue-badge">ICLR 2026</span>
                 </div>
-                <p class="authors">Caorui Li, Yu Chen, Yiyan Ji, Jin Xu, Zhenyu Cui, Shihao Li, Yuanxing Zhang, et al., including <strong>Chenchen Zhang</strong></p>
+                <p class="authors">Caorui Li, Yu Chen, Yiyan Ji, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 42 authors</summary>
+                  <p class="authors">Caorui Li, Yu Chen, Yiyan Ji, Jin Xu, Zhenyu Cui, Shihao Li, Yuanxing Zhang, Zhenghao Song, Dingling Zhang, Ying He, Haoxiang Liu, Yuxuan Wang, Qiufeng Wang, Jiafu Tang, Zhenhe Wu, Jiehui Luo, Zhiyu Pan, Weihao Xie, <strong>Chenchen Zhang</strong>, Zhaohui Wang, Jiayi Tian, Yanghai Wang, Zhe Cao, Minxin Dai, Ke Wang, Runzhe Wen, Yinghao Ma, Yaning Pan, Sungkyun Chang, Termeh Taheri, Haiwen Xia, Christos Plachouras, Emmanouil Benetos, Yizhi Li, Ge Zhang, Jian Yang, Tianhao Peng, Zili Wang, Minghao Liu, Junran Peng, Zhaoxiang Zhang, Jiaheng Liu</p>
+                </details>
+                <p class="paper-note">Tests joint audio-visual reasoning with 1,000 manually verified questions across 13 task types, supported by step-by-step reasoning annotations. Emphasizes complementary evidence from sound and video to distinguish multimodal understanding from single-modality shortcuts.</p>
                 <div class="paper-links">
+                  <a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/df5e4da78dfbbfbfad3fcff0c2ce3bd7-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Proceedings</a>
                   <a href="https://arxiv.org/abs/2510.10689" target="_blank" rel="noopener noreferrer">Paper</a>
                 </div>
               </article>
@@ -791,7 +897,12 @@
                   <h4>MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models</h4>
                   <span class="venue-badge">ICLR 2025</span>
                 </div>
-                <p class="authors">Pei Wang, Yanan Wu, Zekun Wang, Jiaheng Liu, Xiaoshuai Song, Zhongyuan Peng, Ken Deng, <strong>Chenchen Zhang</strong>, et al.</p>
+                <p class="authors">Pei Wang, Yanan Wu, Zekun Wang, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 15 authors</summary>
+                  <p class="authors">Pei Wang, Yanan Wu, Zekun Wang, Jiaheng Liu, Xiaoshuai Song, Zhongyuan Peng, Ken Deng, <strong>Chenchen Zhang</strong>, Jiakai Wang, Junran Peng, Ge Zhang, Hangyu Guo, Zhaoxiang Zhang, Wenbo Su, Bo Zheng</p>
+                </details>
+                <p class="paper-note">Evaluates tool use across five settings, covering single- and multi-turn interaction, one or multiple tools, and out-of-distribution tasks. Uses ground-truth-based metrics without model judges and provides MTU-Instruct data to improve tool-use abilities.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>ICLR 2025</span>
                   <span>Tool use</span>
@@ -804,15 +915,22 @@
 
               <article class="publication-item" id="paper-conceptmath" data-category="evaluation rl">
                 <div class="publication-header">
-                  <h4>ConceptMath: A Bilingual Concept-wise Benchmark for Mathematical Reasoning of LLMs</h4>
-                  <span class="venue-badge">ACL 2024</span>
+                  <h4>ConceptMath: A Bilingual Concept-wise Benchmark for Measuring Mathematical Reasoning of Large Language Models</h4>
+                  <span class="venue-badge">ACL 2024 · Findings</span>
                 </div>
-                <p class="authors">Yanan Wu, Jie Liu, Xingyuan Bu, Jiaheng Liu, <strong>Chenchen Zhang</strong>, et al.</p>
+                <p class="authors">Yanan Wu, Jie Liu, Xingyuan Bu, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 13 authors</summary>
+                  <p class="authors">Yanan Wu, Jie Liu, Xingyuan Bu, Jiaheng Liu, Zhanhui Zhou, Yuanxing Zhang, <strong>Chenchen Zhang</strong>, Zhiqi Bai, Haibin Chen, Tiezheng Ge, Wanli Ouyang, Wenbo Su, Bo Zheng</p>
+                </details>
+                <p class="paper-note">Organizes English and Chinese mathematics problems into a hierarchy of concepts, revealing weaknesses obscured by average benchmark scores. Couples fine-grained diagnosis with targeted fine-tuning to improve underperforming mathematical concepts.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>ACL 2024</span>
                   <span>Math reasoning</span>
                 </div>
                 <div class="paper-links">
+                  <a href="https://aclanthology.org/2024.findings-acl.407/" target="_blank" rel="noopener noreferrer">Proceedings</a>
+                  <a href="https://github.com/conceptmath/conceptmath" target="_blank" rel="noopener noreferrer">Code</a>
                   <a href="https://arxiv.org/abs/2402.14660" target="_blank" rel="noopener noreferrer">Paper</a>
                 </div>
               </article>
@@ -820,9 +938,14 @@
               <article class="publication-item" id="paper-giebench" data-category="evaluation">
                 <div class="publication-header">
                   <h4>GIEBench: Towards Holistic Evaluation of Group Identity-based Empathy for Large Language Models</h4>
-                  <span class="venue-badge">EMNLP 2024</span>
+                  <span class="venue-badge">arXiv 2024</span>
                 </div>
-                <p class="authors">Leyan Wang, Yonggang Jin, Tianhao Shen, Tianyu Zheng, Xinrun Du, <strong>Chenchen Zhang</strong>, et al.</p>
+                <p class="authors">Leyan Wang, Yonggang Jin, Tianhao Shen, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 12 authors</summary>
+                  <p class="authors">Leyan Wang, Yonggang Jin, Tianhao Shen, Tianyu Zheng, Xinrun Du, <strong>Chenchen Zhang</strong>, Wenhao Huang, Jiaheng Liu, Shi Wang, Ge Zhang, Liuyu Xiang, Zhaofeng He</p>
+                </details>
+                <p class="paper-note">Measures empathy across 97 group identities in 11 dimensions. Distinguishes understanding a group’s perspective from spontaneously responding in alignment with it, revealing uneven behavior across identities and sensitivity to explicit perspective-taking prompts.</p>
                 <div class="paper-links">
                   <a href="https://arxiv.org/abs/2406.14903" target="_blank" rel="noopener noreferrer">Paper</a>
                   <a href="https://github.com/GIEBench/GIEBench" target="_blank" rel="noopener noreferrer">Code</a>
@@ -832,16 +955,22 @@
               <article class="publication-item highlight" id="paper-long-context-survey" data-category="survey models">
                 <div class="publication-header">
                   <h4>A Comprehensive Survey on Long Context Language Modeling</h4>
-                  <span class="venue-badge">Survey</span>
+                  <span class="venue-badge">arXiv 2025</span>
                 </div>
-                <p class="authors">LCLM-Horizon contributors</p>
+                <p class="authors">Jiaheng Liu, Dawei Zhu, Zhiqi Bai, …, <strong>Chenchen Zhang</strong>, et al.</p>
+                <details class="author-details">
+                  <summary>All 37 authors</summary>
+                  <p class="authors">Jiaheng Liu, Dawei Zhu, Zhiqi Bai, Yancheng He, Huanxuan Liao, Haoran Que, Zekun Wang, <strong>Chenchen Zhang</strong>, Ge Zhang, Jiebin Zhang, Yuanxing Zhang, Zhuo Chen, Hangyu Guo, Shilong Li, Ziqiang Liu, Yong Shan, Yifan Song, Jiayi Tian, Wenhao Wu, Zhejian Zhou, Ruijie Zhu, Junlan Feng, Yang Gao, Shizhu He, Zhoujun Li, Tianyu Liu, Fanyu Meng, Wenbo Su, Yingshui Tan, Zili Wang, Jian Yang, Wei Ye, Bo Zheng, Wangchunshu Zhou, Wenhao Huang, Sujian Li, Zhaoxiang Zhang</p>
+                </details>
+                <p class="paper-note">Synthesizes long-context research across data, architectures, workflows, training and inference infrastructure, and evaluation. Connects methods for extending context with analyses of whether models reliably use it, alongside a maintained literature repository.</p>
                 <div class="impact-tags" aria-label="Impact tags">
                   <span>Survey</span>
                   <span>Long-context</span>
                   <span>GitHub</span>
                 </div>
                 <div class="paper-links">
-                  <a href="https://github.com/LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling" target="_blank" rel="noopener noreferrer">Code</a>
+                  <a href="https://arxiv.org/abs/2503.17407" target="_blank" rel="noopener noreferrer">Paper</a>
+                  <a href="https://github.com/LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling" target="_blank" rel="noopener noreferrer">Resources</a>
                 </div>
               </article>
             </div>

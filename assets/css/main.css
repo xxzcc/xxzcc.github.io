@@ -735,9 +735,29 @@ h4 {
 }
 
 .authorship-note {
+  display: inline-block;
+  max-width: calc(100% - 10px);
   margin-left: 10px;
   color: var(--accent);
   font-size: 12px;
+}
+
+.author-details {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.author-details > summary {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.author-details > summary:hover {
+  color: var(--accent);
+}
+
+.author-details[open] > summary {
+  margin-bottom: 6px;
 }
 
 .paper-note {
